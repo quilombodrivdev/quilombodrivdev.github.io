@@ -1,6 +1,15 @@
 ---
 layout: default
-title: Jekyll Example Site
 ---
 
-<h1>Hello World</h1>
+<div class="home">
+
+  <h1> {{site.description}}</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+          {% include postPreview.html post=post %}
+    {% endfor %}
+  </ul>
+
+
+</div>
