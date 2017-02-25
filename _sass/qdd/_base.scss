@@ -1,7 +1,11 @@
-body {
-    font-color:red!important;
+body{
+  font-family: 'Rubik',Helvetica, Arial, sans-serif;
 }
 
-h1{
-    font-size: 4em;
+.mainLogo{
+    width:300px;
+    position: relative;
+    left: 50%;
+    margin-left: -150px
 }
+
