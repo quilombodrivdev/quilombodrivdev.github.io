@@ -2,3 +2,4 @@ _site
 vendor
 dist
 _site
+.bundle
