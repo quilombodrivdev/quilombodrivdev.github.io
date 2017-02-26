@@ -17,7 +17,7 @@ En un lenguaje fuertemente tipado, las variables tienen un tipo concreto y no po
     int superIntVariable = 15; 
     superIntVariable + "12" //error!
 ```
-En cambio, en los debiles, como javascript, las variables pueden recibir distinto tipos de valores y hacer operaciones entre distintos tipos, hola libertinaje! 
+En cambio, en los debiles como javascript, las variables no poseen tipos, sino que los que los poseen son los valores que reciben las variables. 
 
 **ejemplo en js** 
 ```javascript
@@ -61,11 +61,32 @@ Como podemos comprobarlos rapidamente? Abramos la consola de chrome y utilicemos
     "object"
 
     typeof function soyUnaFuncion(){}
-    "object"
+    "function"
 ```
+## Curiosidades
+### Typeof bug!
+Si en el snippet anterior, algo les parecio raro, pues estan en lo correcto! `typeof null` devuelve `object` ! Este es un bug conocido en js, que no sera solucionado para matener la compatiblidad (backwards compatibily). En un futuro post, vamos a investigar mas en detalle la razon por la cual typeof null devuelve object. 
 
-Algo les parecio raro? typeof null, no deberia haber vuelto null?! Pues, estan en lo correcto, pero este es un bug conocido en js, que no sera solucionado para matener la compatiblidad (backwards compatibily). En un futuro post, vamos a investigar mas en detalle la razon por la cual typeof null devuelve object. 
+### Funciones
+En la ultima sentencia ejecutada, vemos que el typeof de una funcion, es una funcion. Pero como es esto posible, si el tipo function no existe por en la definicion de ECMAScript?. Esto ocurre, porque function es un subtipo de object. Si leemos la spec de ECMACScript, observaremos que define a las functiones como objetos llamables (callable objects). 
 
-Otro punto importante es que ECMAScript, define a las funciones como objetos llamables, y esto lo comprobamos facilmente con la ultima sentencia ejecutada. 
+### Undefined y Undeclared
+Otro punto curioso, es que `typeof soyUnaVaribleNoDeclarada` retorna `undefined`. Veamos el siguiente codigo -  
 
+```javascript
+var variableDeclarada;
+typeof variableDeclarada
+"undefined"
+``` 
+```javascript
+typeof variableNoDeclarada
+"undefined"
+variableNoDeclarada
+Uncaught ReferenceError: variableNoDeclarada is not defined
+    at <anonymous>:1:1
+``` 
 
+El punto anterior, variableDeclarada devuelve undefined. Pero lo mismo sucede con variableNoDeclarada, aunque javascript trata esto de distinta manera. 
+
+El error mostrado por el browser, nos hace confundir aun mas! VariableNoDeclara is not defined, no es lo mismo que undefined. Lo que nos quiere decir el error es que la variable no ha sido declarada por esto no puede ser usada. Para evitar confusiones, los browsers podrian mejorar el error con algo como  
+`Uncaught ReferenceError: variableNoDeclarada is not declared!`
