@@ -28,3 +28,16 @@
         }  
     }
 }
+
+@media screen and (max-width: $mobile-width){
+   .header{ 
+        .col-1{
+            width:100%; 
+            float:none;
+            text-align:center;
+        }
+        .col-2{
+            display:none; 
+        }
+    }
+}
