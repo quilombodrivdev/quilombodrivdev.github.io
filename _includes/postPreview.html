@@ -1,9 +1,12 @@
 <li>
  <div class='post-preview'>
   <div class='col-1'>
-      <div class='post-tag'>[{{ post.tag }}]</div>
+     <div class='post-date'>{{ post.date |  date: "%d|%m|%y" }}</div>
   </div>
-  <div class='col-2'>
+  <div class='col-1'>
+     <div class='tag'>#{{ post.tag }}</div>
+</div>
+    <div class='col-2'>
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>

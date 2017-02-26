@@ -9,7 +9,10 @@
 }
 .post-preview{
     display:flex;
+    align-items: center;
+
     .col-1{
+        margin:10px;
         text-align:center;
         flex:1; 
     }
@@ -25,17 +28,24 @@
     }
 
     .post-tag{
-        font-size:25pt;  
+        font-size:10pt;  
         text-transform: lowercase;
         padding:15px 0;
     }
-
+    .post-date{ 
+        font-size: 20pt;
+        text-transform: lowercase;
+        padding: 19px 0;
+    }
     &:hover{
         background: $background-color; 
         color:white;
         cursor: pointer;
         .post-link{
             color:$color-bold;
+        }
+        .tag{
+           border-color:white;  
         }
     }
 }

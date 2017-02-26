@@ -13,11 +13,20 @@ body{
     padding-left: 10px;
 }
 
+
 .page-content{
     margin: 0 80px; 
     background-color:#f9f9f9;
 }
 
+.tag{
+    border: 3px solid black;
+    padding: 5px;
+
+    &:hover{
+        border-color:white; 
+    }
+}
 
 @media screen and (max-width: $mobile-width){
 
