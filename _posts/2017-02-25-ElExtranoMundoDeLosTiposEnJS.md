@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "El extra\u00F1o mundo de los tipos en Javascript"
+title:  "El extra\u00F1o mundo de los tipos en javascript (draft)"
 tag: javascript
+lang: es
+i18n-link: translated-post
 categories: #javascript
 ---
 
-*Si vamos a empezar, que sea desde las bases. Por esto, es hora de que entender el manejo de tipos en Javascript. Desde hace algunos meses, librerias como Typescript y Flow estan tomando mucho protagonismo. Algunos estan a favor, otros en contra, pero antes de juzgar estas librerias, entendamos algunos conceptos basicos sobre los tipos que maneja Javascript*
+*Si vamos a empezar, que sea desde las bases. Por esto, es hora de que entender el manejo de tipos en Javascript. Desde hace algunos meses, librerias como Typescript y Flow estan tomando mucho protagonismo. Algunos estan a favor, otros en contra, pero antes de juzgar estas librerias, entendamos algunos conceptos basicos sobre los tipos que maneja js*
 
 ## Lenguajes fuertemente tipado vs lenguajes debilmente tipados
 En un lenguaje fuertemente tipado, las variables tienen un tipo concreto y no podran recibir un valor de otro tipo, o hacer operaciones con otros tipos, a menos que se haga una conversion en las mismas (typecasting).

@@ -27,6 +27,20 @@
             }
         }  
     }
+
+    .lang{
+        float:right;
+        .lang-item{
+            text-decoration:none; 
+            padding: 5px;
+            color: black; 
+
+            &:hover{
+                background-color:$background-color; 
+                color:$color-bold;
+            }
+        } 
+    }
 }
 
 @media screen and (max-width: $mobile-width){

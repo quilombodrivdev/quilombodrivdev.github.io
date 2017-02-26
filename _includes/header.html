@@ -9,8 +9,13 @@
             <h1 class='title'> Quilombo driven development </h1> 
         </div>
         <div class='nav'>
-            <a class='nav-item' href='/'>Home</a>
-            <a class='nav-item' href='/about'>About</a>
+            <a class='nav-item' href='/'>{{ site.translate['home'][page.lang] }}</a>
+            <a class='nav-item' href='/about'>{{ site.translate['about'][page.lang] }}</a>
+        </div>
+        <div class="lang">
+            <p> {{page.nav['home']}}</p>
+            <a class='lang-item' href="/">es</a>
+            <a class='lang-item' href="/en">en</a>
         </div>
     </div>
 </div>
