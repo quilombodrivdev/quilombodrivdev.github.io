@@ -64,13 +64,17 @@ Como podemos comprobarlos rapidamente? Abramos la consola de chrome y utilicemos
     "function"
 ```
 ## Curiosidades
-### Typeof bug!
-Si en el snippet anterior, algo les parecio raro, pues estan en lo correcto! `typeof null` devuelve `object` ! Este es un bug conocido en js, que no sera solucionado para matener la compatiblidad (backwards compatibily). En un futuro post, vamos a investigar mas en detalle la razon por la cual typeof null devuelve object. 
 
-### Funciones
-En la ultima sentencia ejecutada, vemos que el typeof de una funcion, es una funcion. Pero como es esto posible, si el tipo function no existe por en la definicion de ECMAScript?. Esto ocurre, porque function es un subtipo de object. Si leemos la spec de ECMACScript, observaremos que define a las functiones como objetos llamables (callable objects). 
+### typeof values
+Javascript no fuerza a las variables a contener siempre valores de los mismos tipos. Esto sucede porque las variables no tienen tipos, sino que las que los contienen son los valores.
 
-### Undefined y Undeclared
+### Typeof bug
+Si algo les parecio raro en el snippet anterior, pues estan en lo correcto! `typeof null` devuelve `object` ! Este es un bug conocido en js, que no sera solucionado para matener la compatiblidad (backwards compatibily). En un futuro post, vamos a investigar mas en detalle la razon por la cual typeof null devuelve object. 
+
+### funciones
+En la ultima sentencia ejecutada, vemos que el typeof de una funcion, es **function**. Pero como es esto posible, si el tipo function no existe en la spec?. Esto ocurre, porque function es un subtipo de object. Si leemos la spec de ECMACScript, observaremos que define a las functiones como **objetos llamables (callable objects)**. 
+
+### undefined y undeclared
 Otro punto curioso, es que `typeof soyUnaVaribleNoDeclarada` retorna `undefined`. Veamos el siguiente codigo -  
 
 ```javascript
@@ -88,5 +92,4 @@ Uncaught ReferenceError: variableNoDeclarada is not defined
 
 En el punto anterior, variableDeclarada retorna undefined. Pero lo mismo sucede con variableNoDeclarada, aunque javascript trata esto de distinta manera. 
 
-El error mostrado por el browser, nos hace confundir aun mas! VariableNoDeclara is not defined, no es lo mismo que undefined. Lo que nos quiere decir el error es que la variable no ha sido declarada por esto no puede ser usada. Para evitar confusiones, los browsers podrian mejorar el error con algo como  
-`Uncaught ReferenceError: variableNoDeclarada is not declared!`
+El error mostrado por el browser, nos hace confundir aun mas! VariableNoDeclara is not defined, no es lo mismo que undefined. Lo que nos quiere decir el error es que la variable no ha sido declarada por esto no puede ser usada. Para evitar confusiones, los browsers podrian mejorar el error con algo como `Uncaught ReferenceError: variableNoDeclarada is not declared!`
