@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The weird world of javascript types"
+title:  "The weird world of javascript types (draft)"
 tag: javascript
 lang: en
 i18n-link: translated-post

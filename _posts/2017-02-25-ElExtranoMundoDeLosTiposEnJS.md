@@ -86,7 +86,7 @@ Uncaught ReferenceError: variableNoDeclarada is not defined
     at <anonymous>:1:1
 ``` 
 
-El punto anterior, variableDeclarada devuelve undefined. Pero lo mismo sucede con variableNoDeclarada, aunque javascript trata esto de distinta manera. 
+En el punto anterior, variableDeclarada retorna undefined. Pero lo mismo sucede con variableNoDeclarada, aunque javascript trata esto de distinta manera. 
 
 El error mostrado por el browser, nos hace confundir aun mas! VariableNoDeclara is not defined, no es lo mismo que undefined. Lo que nos quiere decir el error es que la variable no ha sido declarada por esto no puede ser usada. Para evitar confusiones, los browsers podrian mejorar el error con algo como  
 `Uncaught ReferenceError: variableNoDeclarada is not declared!`
