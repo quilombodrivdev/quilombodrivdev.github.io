@@ -1,3 +1,40 @@
 .post{
     padding: 10px;
 }
+
+.posts{
+    li{
+        list-style:none; 
+    }
+}
+.post-preview{
+    display:flex;
+    text-align:center;
+    .col-1{
+        flex:1; 
+    }
+
+    .col-2{
+        flex:9; 
+    }
+
+    .post-link{
+        color:black;
+        text-decoration:none
+    }
+
+    .post-tag{
+        font-size:25pt;  
+        text-transform: lowercase;
+        padding:15px 0;
+    }
+
+    &:hover{
+        background: $background-color; 
+        color:white;
+        cursor: pointer;
+        .post-link{
+            color:$color-bold;
+        }
+    }
+}
