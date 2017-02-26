@@ -11,7 +11,6 @@
 .post-preview-wrap-link{
     text-decoration:none;
     color:black;
-    cursor: pointer;
 }
 .post-preview{
     display:flex;
@@ -51,6 +50,7 @@
     &:hover{
         background: $background-color; 
         color:white;
+        cursor:pointer;
         .post-link{
             color:$color-bold;
         }
