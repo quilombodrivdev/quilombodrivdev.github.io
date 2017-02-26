@@ -3,12 +3,14 @@
 }
 
 .posts{
+    padding: 0px;
     li{
         list-style:none; 
     }
 }
 .post-preview{
     display:flex;
+    flex-wrap: wrap-reverse;
     align-items: center;
 
     .col-1{
