@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "El extrano mundo de los tipos en Javascript"
+tag: JS
 categories: #javascript
 ---
 
