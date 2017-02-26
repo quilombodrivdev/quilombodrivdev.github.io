@@ -1,0 +1,30 @@
+.header{
+    height: 150px;
+
+    .col-1{
+        width: 30%; 
+        float:left;
+    }
+
+    .col-2{
+        width: 90%; 
+    }
+
+    .mainLogo{
+        height: 150px;
+        flex:1; 
+    }
+
+    .nav{
+        .nav-item{
+            text-decoration:none; 
+            color:black;
+            padding:10px;
+
+            &:hover{
+                background-color:$background-color;
+                color:#fabd2f;
+            }
+        }  
+    }
+}

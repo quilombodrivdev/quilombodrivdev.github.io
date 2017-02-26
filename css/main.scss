@@ -1,8 +1,11 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
+
+
+@import "../_sass/qdd/_cross_variables.scss";
 @import "../_sass/qdd/_base.scss";
-@import "../_sass/qdd/_posts.scss";
+@import "../_sass/qdd/_post.scss";
 @import "../_sass/qdd/_code.scss";
 @import "../_sass/qdd/_syntax.scss";
-    
+@import "../_sass/qdd/_header.scss";
