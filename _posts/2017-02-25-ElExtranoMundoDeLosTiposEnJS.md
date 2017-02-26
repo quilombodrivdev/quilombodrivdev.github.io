@@ -7,10 +7,10 @@ i18n-link: translated-post
 categories: #javascript
 ---
 
-*Si vamos a empezar, que sea desde las bases. Por esto, es hora de que entender el manejo de tipos en Javascript. Desde hace algunos meses, librerias como Typescript y Flow estan tomando mucho protagonismo. Algunos estan a favor, otros en contra, pero antes de juzgar estas librerias, entendamos algunos conceptos basicos sobre los tipos que maneja js*
+*Si vamos a empezar, que sea desde las bases. Por esto, es hora de que entender el manejo de tipos en Javascript. Desde hace algunos meses, librerías como Typescript y Flow están tomando mucho protagonismo. Algunos estan a favor, otros en contra, pero antes de juzgar estas libs, entendamos algunos conceptos basicos sobre los tipos que maneja js*
 
 ## Lenguajes fuertemente tipado vs lenguajes debilmente tipados
-En un lenguaje fuertemente tipado, las variables tienen un tipo concreto y no podran recibir un valor de otro tipo, o hacer operaciones con otros tipos, a menos que se haga una conversion en las mismas (typecasting).
+En un lenguaje fuertemente tipado, las variables tienen un tipo concreto y no podrán recibir un valor de otro tipo, o hacer operaciones con otros tipos, a menos que se haga una conversion en las mismas (typecasting).
 
 **ejemplo en c**
 ```c
@@ -27,7 +27,7 @@ En cambio, en los debiles como javascript, las variables no poseen tipos, sino q
 En este caso, javascript convierte el 15 en string y se lo concatena al 12, ya que para los strings sumar es igual a concatenar. 
 
 ## Tipos en javascript
-Como veiamos anteriormente debido a su naturaleza debilmente tipada, cuando programamos en javascript, pareciera que los tipos no existen. Pero no nos dejemos enga\u00F1ar, aunque no los veamos los tipos siempre estan. 
+Como veiamos anteriormente debido a su naturaleza debilmente tipada, cuando programamos en javascript, pareciera que los tipos no existen. Pero no nos dejemos engañar, aunque no los veamos los tipos siempre estan. 
 
 ECMAScript define los siguientes tipos: 
 
