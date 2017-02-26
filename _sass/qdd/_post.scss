@@ -8,6 +8,11 @@
         list-style:none; 
     }
 }
+.post-preview-wrap-link{
+    text-decoration:none;
+    color:black;
+    cursor: pointer;
+}
 .post-preview{
     display:flex;
     flex-wrap: wrap-reverse;
@@ -26,7 +31,6 @@
 
     .post-link{
         color:black;
-        text-decoration:none
     }
 
     .post-tag{
@@ -39,10 +43,14 @@
         text-transform: lowercase;
         padding: 19px 0;
     }
+
+    .tag-image{
+        width:30px; 
+        border: 3px solid $background-color;
+    } 
     &:hover{
         background: $background-color; 
         color:white;
-        cursor: pointer;
         .post-link{
             color:$color-bold;
         }
