@@ -57,4 +57,13 @@ Como podemos comprobarlos rapidamente? Abramos la consola de chrome y utilicemos
 
     typeof null
     "object"
+
+    typeof function soyUnaFuncion(){}
+    "object"
 ```
+
+Algo les parecio raro? typeof null, no deberia haber vuelto null?! Pues, estan en lo correcto, pero este es un bug conocido en js, que no sera solucionado para matener la compatiblidad (backwards compatibily). En un futuro post, vamos a investigar mas en detalle la razon por la cual typeof null devuelve object. 
+
+Otro punto importante es que ECMAScript, define a las funciones como objetos llamables, y esto lo comprobamos facilmente con la ultima sentencia ejecutada. 
+
+
