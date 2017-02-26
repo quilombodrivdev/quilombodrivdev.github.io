@@ -51,3 +51,12 @@
         }
     }
 }
+
+
+@media screen and (max-width: $mobile-width){
+   .post-preview{ 
+        .col-1{
+            display:none; 
+        }
+    }
+}
