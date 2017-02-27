@@ -3,21 +3,20 @@ layout: post
 title:  "El extra\u00F1o mundo de los tipos en javascript (draft)"
 tag: javascript
 lang: es
-i18n-link: translated-post
 categories: #javascript
 ---
 
 *Si vamos a empezar, que sea desde las bases. Por esto, es hora de que entender el manejo de tipos en Javascript. Desde hace algunos meses, librerías como Typescript y Flow están tomando mucho protagonismo. Algunos estan a favor, otros en contra, pero antes de juzgar estas libs, entendamos algunos conceptos basicos sobre los tipos que maneja js*
 
 ## Lenguajes fuertemente tipado vs lenguajes debilmente tipados
-En un lenguaje fuertemente tipado, las variables tienen un tipo concreto. Es por esto que no podrán contener un valor de otro tipo, o hacer operaciones con otros tipos, a menos que se haga una conversion **explicita** en las mismas (typecasting).
+En un lenguaje **fuertemente tipado**, las variables tienen un tipo concreto. Es por esto que no podrán contener un valor de otro tipo, o hacer operaciones con otros tipos, a menos que se haga una conversion **explicita** en las mismas (typecasting).
 
 **ejemplo en c**
 ```c
     int superIntVariable = 15; 
     superIntVariable = "12" //error!
 ```
-En cambio, en los debiles como javascript, las variables no poseen tipos, sino que los que los poseen son los valores que reciben las variables. 
+En cambio, en los lenguaajes **debilmente tipados** como javascript, las variables no poseen tipos, sino que los que los poseen son los valores que reciben las variables. 
 
 **ejemplo en js** 
 ```javascript
@@ -40,8 +39,7 @@ ECMAScript define los siguientes tipos:
 * Object 
 * Symbol definido por ECMAScript6 (aprenderemos esto en algun momento, ahora no tengo idea que es =) )
 
-Como podemos comprobar esto rapidamente? 
-Abramos la consola de chrome y utilicemos el operador *typeof* 
+Cuando operamos con un valor, javascript se encarga, implicitamente, de darle el tipo correspondiente. Cómo podemos comprobar esto rapidamente? Abramos la consola de chrome y utilicemos el operador *typeof* 
 
 ```javascript
     typeof 15
