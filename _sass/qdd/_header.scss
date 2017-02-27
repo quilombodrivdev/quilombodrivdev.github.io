@@ -1,5 +1,6 @@
 .header{
-    height: 150px;
+    border-bottom: $border;
+    height: 170px;
 
     .col-1{
         width: 30%; 
@@ -45,6 +46,7 @@
 
 @media screen and (max-width: $mobile-width){
    .header{ 
+        height: 200px;
         .col-1{
             width:100%; 
             float:none;
