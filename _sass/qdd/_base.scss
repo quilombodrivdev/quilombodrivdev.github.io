@@ -5,6 +5,9 @@ body{
   background-color: $background-color;
 }
 
+a{
+ transition:all 0.3s ease;
+}
 .container{
     max-width:calc(900px - (30px * 2));
     margin-right: auto;
