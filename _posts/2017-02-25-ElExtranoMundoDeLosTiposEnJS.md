@@ -95,5 +95,8 @@ En el punto anterior, variableDeclarada retorna undefined. Pero lo mismo sucede 
 
 El error mostrado por el browser, nos hace confundir aun mas! VariableNoDeclara is not defined, no es lo mismo que undefined. Lo que nos quiere decir el error es que la variable no ha sido declarada por esto no puede ser usada. Para evitar confusiones, los browsers podrian mejorar el error con algo como:
 
-`Uncaught ReferenceError: variableNoDeclarada is not declared`
+```javascript 
+Uncaught ReferenceError: 
+    variableNoDeclarada is not declared`
+```
 
