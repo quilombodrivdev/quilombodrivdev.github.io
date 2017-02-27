@@ -15,19 +15,20 @@ En un lenguaje fuertemente tipado, las variables tienen un tipo concreto. Es por
 **ejemplo en c**
 ```c
     int superIntVariable = 15; 
-    superIntVariable + "12" //error!
+    superIntVariable = "12" //error!
 ```
 En cambio, en los debiles como javascript, las variables no poseen tipos, sino que los que los poseen son los valores que reciben las variables. 
 
 **ejemplo en js** 
 ```javascript
     superIntVariable = 15; 
-    superIntVariable + "12" // "1512" Trato de hacer lo mejor que puedo ;)
+    superIntVariable = "12" // not an error! 
 ```
-En este caso, javascript convierte el 15 en string y se lo concatena al 12, ya que para los strings sumar es igual a concatenar. Esa conversion implicita recibe el nombre de **coercion**. En proximos capitulos veremos de que se trata.  
+
+En el ultimo ejemplo, no hay ningun error! Ahora superIntVariable contiene un valor de tipo string.
 
 ## Tipos en javascript
-Como veiamos anteriormente debido a su naturaleza debilmente tipada, cuando programamos en javascript, pareciera que los tipos no existen. Pero no nos dejemos engañar, aunque no los veamos los tipos siempre estan. 
+Como veiamos anteriormente debido a su naturaleza debilmente tipada, cuando programamos en javascript pareciera que los tipos no existen. Pero no nos dejemos engañar, aunque no los veamos los tipos siempre estan. 
 
 ECMAScript define los siguientes tipos: 
 
@@ -67,7 +68,7 @@ Abramos la consola de chrome y utilicemos el operador *typeof*
 ## Curiosidades
 
 ### typeof values
-Javascript no fuerza a las variables a contener siempre valores de los mismos tipos. Esto sucede porque las variables no tienen tipos, sino que las que los contienen son los valores. Cuando le asignamos un nuevo valor a une variable, no cambiamos el estado en la memoria, sino que nuestra variable apunta a un nuevo valor. 
+Javascript no fuerza a las variables a contener valores de los mismos tipos. Esto sucede porque las variables no tienen tipos, sino que las que los contienen son los valores. Cuando le asignamos un nuevo valor a una variable, no estamos cambiando el estado en la memoria, sino que nuestra variable apunta a un nuevo valor. 
 
 ### typeof null bug
 Si algo les parecio raro en el snippet anterior, pues estan en lo correcto! `typeof null` devuelve `object` ! Este es un bug conocido en js, que no sera solucionado para matener la compatiblidad (backwards compatibily). En un futuro post, vamos a investigar mas en detalle la razon por la cual typeof null devuelve object. 
@@ -97,6 +98,6 @@ El error mostrado por el browser, nos hace confundir aun mas! VariableNoDeclara 
 
 ```javascript 
 Uncaught ReferenceError: 
-    variableNoDeclarada is not declared`
+    variableNoDeclarada is not declared
 ```
 
