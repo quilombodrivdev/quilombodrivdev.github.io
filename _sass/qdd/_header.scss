@@ -1,6 +1,6 @@
 .header{
     border-bottom: $border;
-    height: 170px;
+    height: 200px;
 
     .col-1{
         width: 30%; 
@@ -14,6 +14,12 @@
     .mainLogo{
         height: 150px;
         flex:1; 
+        background-color: $color-bold;
+        -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+        border-radius: 50%;
+        padding: 10px;
+        margin: 10px;
+        border: 4px dotted black;
     }
 
     .nav{
@@ -46,7 +52,7 @@
 
 @media screen and (max-width: $mobile-width){
    .header{ 
-        height: 200px;
+        height: 250px;
         .col-1{
             width:100%; 
             float:none;
