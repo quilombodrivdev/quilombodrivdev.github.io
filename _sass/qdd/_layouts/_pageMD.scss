@@ -2,4 +2,25 @@
     .pagemd-content{
         padding: 0 20px; 
     }
+
+    .pagemd-footer{
+        display:flex;
+        .pagemd-footer-author{
+            flex:1;
+            text-align:center;
+            .pagemd-footer-author-link{
+                text-decoration:none;
+                color:black;
+                .pagemd-footer-author-img{
+                    height:50px;
+                    border-radius: 50%;
+                    -webkit-box-shadow:0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,0.2);
+                } 
+                .pagemd-footer-author-name{
+
+                }  
+            }
+            
+        }
+    }
 }

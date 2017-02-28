@@ -11,4 +11,16 @@ layout: default
   {{ content }}
   </article>
 
+  <footer class="pagemd-footer">
+        {% for author in page.authors %}
+
+        <div class="pagemd-footer-author">  
+            <a class="pagemd-footer-author-link" href={{author.link}}>
+                <img class="pagemd-footer-author-img" src={{ author.gravatar | gravatar }}></img>
+                <p class="pagemd-footer-author-name" > {{author.name}} </p>
+            </a>
+        </div>
+        {% endfor %}
+  </footer> 
+
 </div>

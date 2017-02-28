@@ -1,5 +1,6 @@
 ---
 layout: pageMD 
+authors: [{"name":"Alan", "gravatar":"alan.campora@gmail.com","link":"http://github.com/alancampora"},{"name":"Richard", "gravatar":"ricardogcolombo@gmail.com", "link":"http://github.com/ricardogcolombo"}]
 ---
 
 # Bienvenidos a QDD !
