@@ -8,13 +8,16 @@ defaults:
      values:
          lang: es
          base-url: "/"
+         pages-url: "pages"
     -
      scope:
          path: en
      values:
          lang: en
-         base-url: "/en"
-
+         base-url: "/en/"
+         pages-url: "pages"
+            
+             
 translate:
     home: 
         en: "Home"

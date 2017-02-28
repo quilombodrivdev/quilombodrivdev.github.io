@@ -10,7 +10,7 @@
         </div>
         <div class='nav'>
             <a class='nav-item' href={{ page.base-url }}>{{ site.translate['home'][page.lang] }}</a>
-            <!--<a class='nav-item' href='/about'>{{ site.translate['about'][page.lang] }}</a>-->
+            <a class='nav-item' href= {{ page.base-url | append:  page.pages-url | append: '/about.html' }}>{{ site.translate['about'][page.lang] }}</a>
         </div>
         <div class="lang">
             <a class='lang-item' href="/">es</a>
