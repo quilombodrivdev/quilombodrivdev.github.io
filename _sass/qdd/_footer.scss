@@ -2,6 +2,7 @@
     border-top: $border;
     text-align: center;
     padding: 5px;
+    background:-webkit-linear-gradient($bg-grey,$bg-gradient);
 
     .icons{
         .icon-img{
