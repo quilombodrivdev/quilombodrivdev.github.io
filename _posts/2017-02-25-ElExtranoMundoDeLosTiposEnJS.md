@@ -26,7 +26,7 @@ En cambio, en los lenguajes **debilmente tipados** como javascript, las variable
 
 En el último ejemplo, no hay ningun error! Ahora `superIntVariable` contiene un valor de tipo string.
 
-## Tipos en javascript
+## Tipos primitivos en javascript
 Como veiamos anteriormente debido a su naturaleza debilmente tipada, cuando programamos en javascript pareciera que los tipos no existen. Pero no nos dejemos engañar, aunque no los veamos los tipos siempre están. 
 
 [ECMAScript6](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-overview) define los siguientes tipos: 
@@ -37,7 +37,7 @@ Como veiamos anteriormente debido a su naturaleza debilmente tipada, cuando prog
 * Number
 * String
 * Object 
-* Symbol - nuevo en  ECMAScript6 (aprenderemos esto en algun momento, ahora no tengo idea que es =) )
+* Symbol - nuevo en  ECMAScript6
 
 Cuando operamos con un valor javascript se encarga, implicitamente, de darle el tipo correspondiente. Cómo podemos comprobar esto rapidamente? Abramos la consola de chrome y utilicemos el operador **typeof** 
 
@@ -92,7 +92,7 @@ Uncaught ReferenceError: variableNoDeclarada is not defined
 
 En el punto anterior, `variableDeclarada` retorna undefined. Pero lo mismo sucede con `variableNoDeclarada`, aunque **semanticamente** representan estados distintos.
 
-El error mostrado por el browser, nos hace confundir aun más! `variableNoDeclara is not defined`, no es lo mismo que undefined. Lo que nos quiere decir el error es que la variable no ha sido declarada por esto no puede ser usada. Para evitar confusiones, los browsers podrían mejorar el error con algo más adecuado
+El error mostrado por el browser, nos hace confundir aun más! `variableNoDeclara is not defined`, suena a undefined, pero no es lo mismo. Lo que nos quiere decir el error es que la variable no ha sido declarada por esto no puede ser usada. Para evitar confusiones, los browsers podrían mejorar el error con algo más adecuado
 
 ```javascript 
 Uncaught ReferenceError: 
