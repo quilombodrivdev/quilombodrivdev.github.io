@@ -9,14 +9,14 @@ categories: #javascript
 *Desde hace algunos meses, librerías como Typescript y Flow están tomando mucho protagonismo en la escena de javascript. Algunos están a favor, otros en contra, pero antes de juzgar estas libs, entendamos algunos conceptos basicos sobre el manejo de tipos en javascript*
 
 ## Lenguajes fuertemente tipado vs lenguajes debilmente tipados
-En un lenguaje **fuertemente tipado**, las variables tienen un tipo concreto. Es por esto que no podrán contener un valor de otro tipo, o hacer operaciones con otros tipos a menos que se haga una conversion **explicíta** en las mismas (typecasting).
+En un lenguaje **fuertemente tipado**, las variables tienen un tipo concreto. Es por esto que no podrán contener un valor de otro tipo, o hacer operaciones con otros tipos a menos que se haga una conversión **explicíta** en las mismas (typecasting).
 
 **ejemplo en c**
 ```c
     int superIntVariable = 15; 
     superIntVariable = "12" //error!
 ```
-En cambio, en los lenguajes **debilmente tipados** como javascript, las variables no poseen tipos, sino que los que los poseen son los valores que reciben las variables. También suele recibir el nombre de **no-tipados**, pero veo a esta denomiación bastante desasertada.
+En cambio, en los lenguajes **debilmente tipados** como javascript, las variables no poseen tipos, sino que los que los poseen son los valores que reciben las variables. También suele recibir el nombre de **no-tipados**, pero veo a esta denomiación bastante desacertada.
 
 **ejemplo en js** 
 ```javascript
