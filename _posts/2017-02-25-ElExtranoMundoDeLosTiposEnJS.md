@@ -102,4 +102,4 @@ Uncaught ReferenceError:
 ## Conclusiones
 Cuando programamos en lenguajes debilmente tipados, no declaramos explicitamente los tipos. Javascript se encarga del manejo de los tipos  de manera automatica. 
 
-Los tipos primitivos son object, string, number, null, undefined y symbol; y lo pudimos comprobar rapidamente utilizando typeof. Este operador es muy útil pero hay que tener cuidado a la hora de usarlo con null, funciones y variables no declaradas. 
+Los tipos primitivos son object, boolean, string, number, null, undefined y symbol; y lo pudimos comprobar rapidamente utilizando typeof. Este operador es muy útil pero hay que tener cuidado a la hora de usarlo con null, funciones y variables no declaradas. 
