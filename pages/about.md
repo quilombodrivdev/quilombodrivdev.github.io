@@ -13,9 +13,9 @@ Luego de estar trabajando algunos años con **javascript**, hace relativamente p
 
 Hay dos razones principales por las cuales estamos iniciando este proyecto. 
 
-Vemos que hay muy poca información sobre js y otras tecnologías, es español. Si bien hay comunidades, toda la info se pierde en slacks pero no estaria bueno que la info quede registrada y que cualquiera pueda acceder en cualquier momento?! 
+Vemos que hay muy poca información sobre js y otras tecnologías, es español. Si bien hay comunidades, mucho conocimiento se pierde en un slack. A nuestro criterio, lo mejor seria que toda esta información quede guardada y sea compartida con los demás!
 
-Este blog es para que **APRENDAMOS TODOS JUNTOS**. Nuestra idea es preguntarnos, "por qué X funciona de esta manera?". Tomando esta pregunta como partida, investigaremos sobre el tema, y como resultado vamos a escribir un articulo (en español e inglés) y cuando tengamos tiempo, grabaremos un video en youtube! Puede que la info contenga errores (esto es parte del aprendizaje) por eso nos gustaría recibir el feedback de otras personas! 
+Este blog es para que **APRENDAMOS TODOS JUNTOS**. Nuestra idea es preguntarnos, "por qué X funciona de esta manera?". Tomando esta pregunta como partida, investigaremos sobre el tema y como resultado vamos a escribir un articulo (en español e inglés). Cuando tengamos tiempo, también grabaremos un video en youtube! Vale aclarar que nosotros también estamos aprendiendo, por esto todas las correciones son bien recibidas.
 
 ### Querés ser parte de qdd? 
 
