@@ -1,10 +1,11 @@
 ---
 layout: default
+comments: true
 ---
 <div class="post">
 
   <header class="post-header">
-    <h1>{{ page.title }}</h1>
+      <h1>{{ page.title }}</h1>
     <p class="meta">
         {{ page.date | date: "%b %-d, %Y" }}
                 {% if page.author %} • 
@@ -19,5 +20,9 @@ layout: default
   <article class="post-content">
   {{ content }}
   </article>
+
+  <footer> 
+     {% include commentsDisqus.html  page=page %}
+  </footer>
 
 </div>

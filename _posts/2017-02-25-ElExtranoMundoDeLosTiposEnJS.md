@@ -3,6 +3,7 @@ layout: post
 title:  "El extra\u00F1o mundo de los tipos en javascript (draft)"
 tag: javascript
 lang: es
+comments: true
 categories: #javascript
 ---
 
