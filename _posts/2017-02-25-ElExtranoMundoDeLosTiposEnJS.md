@@ -4,6 +4,7 @@ title:  "El extraño mundo de los tipos en javascript (draft)"
 tag: javascript
 lang: es
 categories: #javascript
+comments: true
 ---
 
 *Desde hace algunos meses, librerías como Typescript y Flow están tomando mucho protagonismo en la escena de javascript. Algunos están a favor, otros en contra, pero antes de juzgar estas libs, entendamos algunos conceptos basicos sobre el manejo de tipos en javascript*
@@ -39,7 +40,7 @@ Como veiamos anteriormente debido a su naturaleza debilmente tipada, cuando prog
 * object 
 * symbol - nuevo en  ECMAScript6
 
-Cuando operamos con un valor javascript se encarga, implicitamente, de darle el tipo correspondiente. Cómo podemos comprobar esto rapidamente? Abramos la consola de chrome y utilicemos el operador **(typeof)[https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/typeof]** 
+Cuando operamos con un valor javascript se encarga, implicitamente, de darle el tipo correspondiente. Cómo podemos comprobar esto rapidamente? Abramos la consola de chrome y utilicemos el operador [typeof](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/typeof)
 
 ```javascript
     typeof 15
