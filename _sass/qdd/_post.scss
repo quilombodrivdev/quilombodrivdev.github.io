@@ -9,8 +9,9 @@
     }
 }
 .post-preview-wrap-link{
-    text-decoration:none;
-    color:black;
+    &:hover{
+        background-color:transparent;
+    }
 }
 .post-preview{
     display:flex;

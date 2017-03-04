@@ -36,28 +36,15 @@
     
     .nav{
         .nav-item{
-            text-decoration:none; 
-            color:black;
             padding:10px;
-
-            &:hover{
-                background-color:$background-color;
-                color:$color-bold;
-            }
         }  
     }
 
     .lang{
         text-align:right;
         .lang-item{
-            text-decoration:none; 
             padding: 5px;
-            color: black; 
 
-            &:hover{
-                background-color:$background-color; 
-                color:$color-bold;
-            }
         } 
     }
 }

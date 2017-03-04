@@ -7,6 +7,13 @@ body{
 
 a{
  transition:all 0.3s ease;
+ text-decoration:none;
+ padding:5px;
+ color:black;
+ &:hover{
+    background: $background-color;
+    color: $color-bold;
+ }
 }
 .container{
     max-width:calc(900px - (30px * 2));

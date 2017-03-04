@@ -5,6 +5,11 @@
     background:-webkit-linear-gradient($bg-grey,$bg-gradient);
 
     .icons{
+        a{
+            &:hover{
+                background-color: transparent; 
+            } 
+        }
         .icon-img{
             width: 40px;
             padding: 10px;
