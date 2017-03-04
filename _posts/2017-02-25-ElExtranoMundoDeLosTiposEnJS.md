@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "El extra\u00F1o mundo de los tipos en javascript (draft)"
+title:  "El extraño mundo de los tipos en javascript (draft)"
 tag: javascript
 lang: es
-comments: true
 categories: #javascript
 ---
 
@@ -17,7 +16,7 @@ En un lenguaje **fuertemente tipado**, las variables tienen un tipo concreto. Es
     int superIntVariable = 15; 
     superIntVariable = "12" //error!
 ```
-En cambio, en los lenguajes **debilmente tipados** como javascript, las variables no poseen tipos, sino que los que los poseen son los valores que reciben las variables. También suele recibir el nombre de **no-tipados**, pero veo a esta denomiación bastante desacertada.
+En cambio, en los lenguajes **debilmente tipados** como javascript, las variables no poseen tipos, y las operaciones entre distinto tipo de valores genera una conversion implicita (en js recibe el nombre de **coercion**). También, suelen recibir el nombre de **no-tipados** pero vemos a esta denomiación desacertada, ya que como vamos a ver más adelante, los tipos están aunque no los declaremos.
 
 **ejemplo en js** 
 ```javascript
@@ -25,22 +24,22 @@ En cambio, en los lenguajes **debilmente tipados** como javascript, las variable
     superIntVariable = "12" // not an error! 
 ```
 
-En el último ejemplo, no hay ningun error! Ahora `superIntVariable` contiene un valor de tipo string.
+En el último ejemplo, no hay ningun error! Ahora `superIntVariable` contiene un valor de tipo string. 
 
 ## Tipos primitivos en javascript
-Como veiamos anteriormente debido a su naturaleza debilmente tipada, cuando programamos en javascript pareciera que los tipos no existen. Pero no nos dejemos engañar, aunque no los veamos los tipos siempre están. 
+Como veiamos anteriormente debido a su naturaleza debilmente tipada, cuando programamos en javascript pareciera que los tipos no existen. Pero no nos dejemos engañar, aunque no los veamos los tipos siempre están. Las variables no tienen tipo, sino que los que los poseen son los valores que reciben las variables. 
 
-[ECMAScript6](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-overview) define los siguientes tipos: 
+[ECMAScript6](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-overview) define los siguientes tipos "Built-in types": 
 
-* Undefined
-* Null 
-* Boolean 
-* Number
-* String
-* Object 
-* Symbol - nuevo en  ECMAScript6
+* undefined
+* null 
+* boolean 
+* number
+* string
+* object 
+* symbol - nuevo en  ECMAScript6
 
-Cuando operamos con un valor javascript se encarga, implicitamente, de darle el tipo correspondiente. Cómo podemos comprobar esto rapidamente? Abramos la consola de chrome y utilicemos el operador **typeof** 
+Cuando operamos con un valor javascript se encarga, implicitamente, de darle el tipo correspondiente. Cómo podemos comprobar esto rapidamente? Abramos la consola de chrome y utilicemos el operador **(typeof)[https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/typeof]** 
 
 ```javascript
     typeof 15
@@ -104,3 +103,5 @@ Uncaught ReferenceError:
 Cuando programamos en lenguajes debilmente tipados, no declaramos explicitamente los tipos. Javascript se encarga del manejo de los tipos  de manera automatica. 
 
 Los tipos primitivos son object, boolean, string, number, null, undefined y symbol; y lo pudimos comprobar rapidamente utilizando typeof. Este operador es muy útil pero hay que tener cuidado a la hora de usarlo con null, funciones y variables no declaradas. 
+
+En los próximos posts vamos a estar profundizando más como js infiere los tipos, coerción y etc! Dejen sus comentarios abajo si tienen dudas , o si les gustaría aportar algo de información al post :bomb: !
