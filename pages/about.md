@@ -1,9 +1,8 @@
 ---
 layout: pageMD 
-authors: [{"name":"Alan", "gravatar":"alan.campora@gmail.com","link":"http://github.com/alancampora"},{"name":"Richard", "gravatar":"ricardogcolombo@gmail.com", "link":"http://github.com/ricardogcolombo"},{"name":"Samu", "gravatar":"samuelfabrizio@gmail.com","link":"http://github.com/alancampora"}]
+title: Bievenidos a QDD!
+authors: [{"name":"Alan", "gravatar":"alan.campora@gmail.com","link":"http://github.com/alancampora"}]
 ---
-
-# Bienvenidos a QDD !
 
 ### Intro
 
