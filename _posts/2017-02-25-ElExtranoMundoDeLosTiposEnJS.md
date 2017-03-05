@@ -103,6 +103,6 @@ Uncaught ReferenceError:
 ## Conclusiones
 Cuando programamos en lenguajes debilmente tipados, no declaramos explicitamente los tipos. Javascript se encarga de inferirlos de manera automágica. 
 
-Vimos que la spce define que los "tipos primitivos" son **object, boolean, string, number, null, undefined y symbol** y lo pudimos comprobar rapidamente utilizando typeof. Este operador es muy útil pero hay que tener cuidado a la hora de usarlo con null, funciones y variables no declaradas. 
+Vimos que la spec define que los "tipos primitivos" son **object, boolean, string, number, null, undefined y symbol** y lo pudimos comprobar rapidamente utilizando typeof. Este operador es muy útil pero hay que tener cuidado a la hora de usarlo con null, funciones y variables no declaradas. 
 
-En los próximos posts vamos a estar profundizando más como js infiere los tipos, coerción y etc! Dejen sus comentarios abajo si tienen dudas , o si les gustaría aportar algo de información al post!
+En los próximos posts vamos a estar profundizando sobre como js infiere los tipos, coerción y etc! Dejen sus comentarios abajo si tienen dudas , o si les gustaría aportar algo de información al post!
