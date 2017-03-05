@@ -1,7 +1,7 @@
 ---
-layout: pageMD 
+layout: post 
 title: Bievenidos a QDD!
-authors: [{"name":"Alan", "gravatar":"alan.campora@gmail.com","link":"http://github.com/alancampora"}]
+author: alancampora
 ---
 
 ### Intro
