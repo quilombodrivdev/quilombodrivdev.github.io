@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "El extraño mundo de los tipos en javascript (draft)"
+title:  "El extraño mundo de los tipos en javascript"
 tag: javascript
 lang: es
 categories: #javascript
@@ -91,9 +91,9 @@ Uncaught ReferenceError: variableNoDeclarada is not defined
     at <anonymous>:1:1
 ``` 
 
-En el punto anterior, `variableDeclarada` retorna undefined. Pero lo mismo sucede con `variableNoDeclarada`, aunque **semanticamente** representan estados distintos.
+Vemos como `variableDeclarada` retorna undefined. Pero lo mismo sucede con `variableNoDeclarada`, aunque **semanticamente** representan estados distintos.
 
-El error mostrado por el browser, nos hace confundir aun más! `variableNoDeclara is not defined`, suena a undefined, pero no es lo mismo. Lo que nos quiere decir el error es que la variable no ha sido declarada por esto no puede ser usada. Para evitar confusiones, los browsers podrían mejorar el error con algo más adecuado
+El error mostrado por el browser, nos hace confundir aun más! `variableNoDeclara is not defined`. Si estuvieramos distraidos, puede puede que nos suene parecido a `variableNoDeclarada is undefined`, pero no es lo mismo. Lo que nos quiere decir el error es que la variable no ha sido declarada por esto no puede ser usada. Para evitar confusiones, los browsers podrían mejorar el error con algo más adecuado
 
 ```javascript 
 Uncaught ReferenceError: 
@@ -101,8 +101,8 @@ Uncaught ReferenceError:
 ```
 
 ## Conclusiones
-Cuando programamos en lenguajes debilmente tipados, no declaramos explicitamente los tipos. Javascript se encarga del manejo de los tipos  de manera automatica. 
+Cuando programamos en lenguajes debilmente tipados, no declaramos explicitamente los tipos. Javascript se encarga de inferirlos de manera automágica. 
 
-Los tipos primitivos son object, boolean, string, number, null, undefined y symbol; y lo pudimos comprobar rapidamente utilizando typeof. Este operador es muy útil pero hay que tener cuidado a la hora de usarlo con null, funciones y variables no declaradas. 
+Vimos que la spce define que los "tipos primitivos" son **object, boolean, string, number, null, undefined y symbol** y lo pudimos comprobar rapidamente utilizando typeof. Este operador es muy útil pero hay que tener cuidado a la hora de usarlo con null, funciones y variables no declaradas. 
 
-En los próximos posts vamos a estar profundizando más como js infiere los tipos, coerción y etc! Dejen sus comentarios abajo si tienen dudas , o si les gustaría aportar algo de información al post :bomb: !
+En los próximos posts vamos a estar profundizando más como js infiere los tipos, coerción y etc! Dejen sus comentarios abajo si tienen dudas , o si les gustaría aportar algo de información al post!
