@@ -3,3 +3,4 @@ vendor
 dist
 _site
 .bundle
+.sass-cache
