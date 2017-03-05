@@ -1,5 +1,5 @@
 ---
-layout: pageMD 
+layout: post 
 title: Glosario
 ---
 * ## [Polifyll](glosarry/polyfill.html)

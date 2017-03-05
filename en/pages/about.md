@@ -1,5 +1,5 @@
 ---
-layout: pageMD 
+layout: post 
 ---
 
 # Welcome to QDD! 
