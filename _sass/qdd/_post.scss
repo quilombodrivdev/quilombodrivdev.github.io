@@ -1,5 +1,11 @@
 .post{
     padding: 10px 25px;
+    a{
+        color:blue; 
+        &:hover{
+            color:$color-bold; 
+        }
+    }
 }
 
 .posts{

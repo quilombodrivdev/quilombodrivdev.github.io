@@ -9,7 +9,7 @@ comments: true
     <p class="meta">
         {{ page.date | date: "%b %-d, %Y" }}
                 {% if page.author %} • 
-                    {{ page.author }}
+                    {% include author.html  %}
                 {% endif %}
                 {% if page.meta %} • 
                     {{ page.meta }}

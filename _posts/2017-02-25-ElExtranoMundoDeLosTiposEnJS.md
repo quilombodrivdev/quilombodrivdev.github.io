@@ -4,6 +4,7 @@ title:  "El extraño mundo de los tipos en javascript"
 tag: javascript
 lang: es
 categories: #javascript
+author: alancampora
 comments: true
 ---
 
