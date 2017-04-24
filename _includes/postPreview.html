@@ -1,19 +1,17 @@
-<li>
-    <a class='post-preview-wrap-link' href="{{ post.url | prepend: site.baseurl }}">
-        <div class='post-preview'>
-            <div class='col-1'>
-                <div class='post-date'>{{ post.date |  date: "%d|%m|%y" }}</div>
-            </div>
-            <div class='col-1'>
-                <!--<div class='tag'>#{{ post.tag }}</div>-->
-                <img class='tag-image' src='/assets/{{post.tag}}.png'></img>
-            </div>
-            <div class='col-2'>
-                <h2>
-                    <div class="post-link" >{{ post.title }}</div>
-                </h2>
-                <span class="post-meta"></span>
+<div class='postcard'>
+    <a class='postcard__link' href="{{ post.url | prepend: site.baseurl }}">
+    <div class='postcard__header'>
+        <div class='postcard__header__img' style={{ "background-image:url(" | append: post.image
+            | append: ")" }}>
+
+            <div class='postcard__header__img__title'>
+                <p> {{ post.title }} </p>
             </div>
         </div>
-    </a>
-</li>
+    </div>
+    <div class='postcard__content'>
+        <div class='postcard__content_description'>
+            <p> {{ post.excerpt }} </p>
+        </div>
+    </div>
+</div>

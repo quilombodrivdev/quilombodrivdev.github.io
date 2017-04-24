@@ -1,13 +1,13 @@
 .header{
-    height: 150px;
     background: -webkit-linear-gradient($bg-gradient, $bg-grey);
+    padding:10px;
 }
 
 .header__top{}
-.header__top__title{
+.header__nav__title{
+    @extend .title-font;
+    font-size: 15pt;
     text-align:center; 
-    padding:10px;
-    margin: 0;
 }
 
 .header__nav{}
