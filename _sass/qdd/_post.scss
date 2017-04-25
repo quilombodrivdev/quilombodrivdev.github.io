@@ -74,6 +74,16 @@
     position:absolute;
     bottom:0;
 }
+.postcard__content{
+    height: 160px; 
+    overflow: hidden;
+}
 
 @media screen and (max-width: $mobile-width){
+    .postcard{
+        margin: auto;
+    }
+    .posts__group__cards{
+        flex-direction:column;
+    }
 }
