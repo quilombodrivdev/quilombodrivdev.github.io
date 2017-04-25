@@ -1,10 +1,11 @@
+$article-color: black;
 article{
     @media print {
   *,
   *:before,
   *:after {
     background: transparent !important;
-    color: #000 !important;
+    color: $article-color !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -140,7 +141,7 @@ html {
 }
 
 body {
-  color: #444;
+  color: $article-color;
   font-family: 'Merriweather', Georgia, serif;
   margin: 0;
   max-width: 100%;
@@ -183,7 +184,7 @@ h1 {
 /*  === End gross hack */
 
 p {
-  color: #555;
+  color: $article-color;
   height: auto;
   line-height: 1.45;
 }
@@ -199,5 +200,9 @@ pre {
   overflow-x: scroll;
   padding: 1.125em;
 }
-
+strong{
+    font-weight: 900;
+    background: black;
+    color: white;
+}
 }

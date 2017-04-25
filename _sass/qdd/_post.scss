@@ -1,16 +1,8 @@
 // POST LAYOUT 
-.post{
-    padding: 10px 25px;
-    a{
-        color:blue; 
-        &:hover{
-            color:$color-bold; 
-        }
-    }
-}
+.post{}
 
 .post__header{
-    height: 120px;
+    height: 250px;
     position: relative;
     overflow:hidden;
 }
@@ -27,7 +19,7 @@
     right: 0;
     left: 0;
     text-align: center;
-    background-color: rgba(238, 255, 0, 0.63);
+    background-color: $faded-color;
     margin: 10px;
     padding: 10px;
     color: black;
@@ -74,7 +66,7 @@
 }
 .postcard__header__img__title{
     p{
-        background-color: rgba(238, 255, 0, 0.63);
+        background-color: $faded-color;
         margin: 10px;
         padding: 10px;
         color: black;
@@ -84,9 +76,4 @@
 }
 
 @media screen and (max-width: $mobile-width){
-   .post-preview{ 
-        .col-1{
-            display:none; 
-        }
-    }
 }

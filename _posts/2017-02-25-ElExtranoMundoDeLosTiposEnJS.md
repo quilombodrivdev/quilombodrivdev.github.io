@@ -75,7 +75,7 @@ Javascript no fuerza a que una variable contenga siempre valores del mismo tipo.
 Si algo les pareció raro en el snippet anterior, pues están en lo correcto! `typeof null` retorna `object` ! Este es un bug conocido en javascript, que no será solucionado para matener la compatiblidad (backwards compatibily). En un futuro post, vamos a investigar en detalle la razón por la cual typeof null devuelve object. 
 
 ### funciones
-En la última sentencia ejecutada, vemos que el typeof de una función, es **function**. Pero cómo es esto posible si el tipo **function** no existe en la spec?. Esto ocurre, porque function es un subtipo de object. Si leemos la spec de ECMACScript, observaremos que define a las functiones como **objetos llamables (callable objects)**. [ECMAScript6](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-overview)
+En la última sentencia ejecutada, vemos que el typeof de una función, es **function**. Pero cómo es esto posible si este tipo  no existe en la spec?. Esto ocurre, porque function es un subtipo de object. Si leemos la spec de ECMACScript, observaremos que define a las functiones como **objetos llamables (callable objects)**. [ECMAScript6](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-overview)
 
 ### undefined y undeclared
 Otro punto curioso, es que `typeof soyUnaVaribleNoDeclarada` retorna `undefined`. Veamos el siguiente codigo -  

@@ -1,8 +1,7 @@
 .footer{
-    border-top: $border;
     text-align: center;
     padding: 5px;
-    background:-webkit-linear-gradient($bg-grey,$bg-gradient);
+    border-top: 1px solid $grey100;
 
     .icons{
         a{
