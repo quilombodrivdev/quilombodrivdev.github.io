@@ -4,19 +4,20 @@ comments: true
 ---
 <div class="post">
 
-  <header class="post-header">
-      <h1>{{ page.title }}</h1>
-    <p class="meta">
-                {% if page.date %}
-                    {{ page.date | date: "%b %-d, %Y" }}
-                {% endif %}
-                {% if page.author %} • 
-                    {% include author.html  %}
-                {% endif %}
-                {% if page.meta %} • 
-                    {{ page.meta }}
-                {% endif %}
-    </p>
+    <header class="post__header"> 
+        <div class="post__header__background"style={{ "background-image:url(" | append: page.image | append: ")" }}></div>
+      <h1 class="post__header__title">{{ page.title }}</h1>
+    <!--<p class="meta">-->
+                <!--{% if page.date %}-->
+                    <!--{{ page.date | date: "%b %-d, %Y" }}-->
+                <!--{% endif %}-->
+                <!--{% if page.author %} • -->
+                    <!--{% include author.html  %}-->
+                <!--{% endif %}-->
+                <!--{% if page.meta %} • -->
+                    <!--{{ page.meta }}-->
+                <!--{% endif %}-->
+    <!--</p>-->
   </header>
 
   <article class="post-content">

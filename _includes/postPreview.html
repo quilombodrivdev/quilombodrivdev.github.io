@@ -14,4 +14,7 @@
             <p> {{ post.excerpt }} </p>
         </div>
     </div>
+    <div class='postcard__footer'>
+        <div class='postcard__footer__date'>{{ post.date |  date: "%d|%m|%y" }}</div>
+    </div>
 </div>

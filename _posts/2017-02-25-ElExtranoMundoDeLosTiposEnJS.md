@@ -6,7 +6,7 @@ lang: es
 categories: #javascript
 author: alancampora
 comments: true
-image: http://cdn.images.express.co.uk/img/dynamic/20/590x/secondary/Rick-and-Morty-season-3-release-date-Netflix-trailer-cast-sneak-peak-Adult-Swim-840730.jpg
+image: http://i.imgur.com/H0bwNcK.png
 ---
 
 *Desde hace algunos meses, librerías como Typescript y Flow están tomando mucho protagonismo en la escena de javascript. Algunos están a favor, otros en contra, pero antes de juzgar estas libs, entendamos algunos conceptos basicos sobre el manejo de tipos en javascript*
