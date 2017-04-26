@@ -1,9 +1,12 @@
 {% if page.comments %}
 <form method="POST" action="http://127.0.0.1:3500/post/comment">
+    
     <input type="hidden" name="slug" value="{{ page.slug }}">
+
     <label><input name="name" type="text">Name</label>
     <label><input name="email" type="email">E-mail</label>
     <label><textarea name="message"></textarea>Message</label>
+   
     <button type="submit">Enviar!</button>
 </form>
 {% endif %}
