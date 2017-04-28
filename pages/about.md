@@ -3,6 +3,7 @@ layout: post
 title: Bievenidos a QDD!
 author: alancampora
 image: http://www.27newstreet.co.uk/wp-content/uploads/2011/05/Cornerstone-bookshop.jpg
+comments:false
 ---
 
 ### Intro

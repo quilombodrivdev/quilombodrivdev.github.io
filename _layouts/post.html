@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: true
 ---
 <div class="post">
 
@@ -24,8 +23,10 @@ comments: true
   {{ content }}
   </article>
 
-  <footer> 
-     {% include commentsDisqus.html  page=page %}
+  <footer>
+     {% if page.comments %} 
+        {% include commentsView.html  page=page %}
+     {% endif %} 
   </footer>
 
 </div>
