@@ -1,0 +1,25 @@
+<section class="comments">
+
+    {% capture post_slug %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}{% endcapture %}
+    
+    <hr class="comments__separator">
+
+    <h2 class="comments__title">Comments</h2>
+
+    {% if site.data[page.slug] %}
+
+        {% assign comments = site.data[page.slug] | sort %}
+        
+        {% for comment in comments %}
+            {% assign email = comment[1].email %}
+            {% assign name = comment[1].name %}
+            {% assign message = comment[1].message %}
+
+            {% include comment.html index=forloop.index hash=email name=name  message=message %}
+
+        {% endfor %}
+    {% endif %}
+
+    {% include commentInput.html %}
+</section>
+

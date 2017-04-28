@@ -1,0 +1,36 @@
+<div class="comment-input">
+    <form id="comment-input-form" class="comment-input__input-form"> 
+        <input type="hidden" name="slug" value="{{ page.slug }}">
+        <label><input name="name" type="text">Name</label>
+        <label><input name="email" type="email">E-mail</label>
+        <label><textarea name="message"></textarea>Message</label>
+    </form>
+    <button id="comment-input-button" class="comment-input__button ">Enviar!</button>
+</div>
+
+<script>
+    $('#comment-input-button').on("click",function() {
+        var formDataArray = $('#comment-input-form').serializeArray(), 
+            data={} ;
+
+        formDataArray.reduce((object,formData) => { 
+            object[formData.name] = formData.value; 
+            return object;
+        }, data);
+
+        $.ajax({
+            type: "POST",
+            url: "http://quilombodrivdevmessages-labsjs.rhcloud.com/post/comment",
+            contentType: "application/x-www-form-urlencoded",
+            json: true,
+            data: data,
+            success: function(data) {
+                console.log(data);
+            }, 
+            error: function(data){
+                console.log(data);
+            }
+        });
+    });
+</script>
+
