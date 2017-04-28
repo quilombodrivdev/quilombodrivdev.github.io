@@ -4,7 +4,9 @@ $base-input-bg: $amber200;
     margin: 5px;
     outline: none;
     background-color: $base-input-bg;
+    font-family:inherit;
 }
+
 .comment-input {
     margin: auto;
     width: 80%;
