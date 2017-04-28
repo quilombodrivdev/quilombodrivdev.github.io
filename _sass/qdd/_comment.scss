@@ -1,7 +1,7 @@
 $comment-content-bg: rgba(230, 215, 101, 0.22);
 .comment{
     margin: 20px auto;
-    width: 60%;
+    width: 80%;
     display:flex;
 }
 
@@ -21,7 +21,7 @@ $comment-content-bg: rgba(230, 215, 101, 0.22);
 .comment__content{
     border-radius: 10px;
     position:relative;
-    flex:3;
+    flex:4;
     background-color:$comment-content-bg;
     padding:20px;
 }
