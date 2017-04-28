@@ -1,6 +1,7 @@
 <div class='comment'>
     <div class="comment__img">
-        <img src={{ "https://www.gravatar.com/avatar/" | append: email }}</img>
+        <img src={{ "https://www.gravatar.com/avatar/" | append: email  | append: "?&d=404"}}
+            onError="this.onerror=null;this.src='../../../assets/avatar/rick-morty-dog.png'"></img>
     </div>
     <div class="comment__content">
         <p class="comment__content__name">{{ name }}</p>
