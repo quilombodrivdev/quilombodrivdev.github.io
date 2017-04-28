@@ -28,3 +28,6 @@ translate:
     glosarry:
         en: "Glosarry"
         es: "Glosario"
+    comments:
+        en: "Comments"
+        es: "Comentarios"
