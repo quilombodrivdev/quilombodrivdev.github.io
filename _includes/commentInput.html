@@ -37,10 +37,10 @@
             json: true,
             data: data,
             success: function(data) {
-                console.log(data);
+                openModal("Gracias! Su mensaje sera aprobado en unos minutos");
             }, 
             error: function(data){
-                console.log(data);
+                openModal("Error al recibir el mensaje");
             }
         });
     });
