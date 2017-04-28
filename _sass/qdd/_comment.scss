@@ -1,0 +1,40 @@
+$comment-content-bg: rgba(230, 215, 101, 0.22);
+.comment{
+    margin: 20px auto;
+    width: 60%;
+    display:flex;
+}
+
+.comment__img{
+    flex:1;
+    text-align: center;
+    padding: 10px;
+    margin:auto;
+    >img{
+        width:50px;
+        border-radius: 50px;
+        filter:grayscale(40%);
+    }
+}
+
+.comment__content{
+    border-radius: 10px;
+    position:relative;
+    flex:3;
+    background-color:$comment-content-bg;
+    padding:20px;
+}
+.comment__content:before{
+    content: "";
+    position: absolute;
+    top: 50%;                         // half way down (vertical center).
+    margin-top: -15px;                // adjust position, arrow has a height of 30px. 
+    left:-30px;
+    border: solid 15px transparent;
+    border-right-color: $comment-content-bg;
+    z-index: 1;
+}
+.comment__content__name{
+    text-align: center;
+}
+ 

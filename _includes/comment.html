@@ -1,5 +1,9 @@
 <div class='comment'>
-    <img src={{ "https://www.gravatar.com/avatar/" | append: email }}</img>
-    <p>{{ name }}</p>
-    <p>{{ message }}</p>
+    <div class="comment__img">
+        <img src={{ "https://www.gravatar.com/avatar/" | append: email }}</img>
+    </div>
+    <div class="comment__content">
+        <p class="comment__content__name">{{ name }}</p>
+        <p>{{ message }}</p>
+    </div>
 </div>
