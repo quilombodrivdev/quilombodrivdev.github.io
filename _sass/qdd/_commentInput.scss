@@ -1,0 +1,29 @@
+$base-input-bg: $amber200;
+.base-input {
+    border: 0;
+    margin: 5px;
+    outline: none;
+    background-color: $base-input-bg;
+}
+.comment-input {
+    margin: auto;
+    width: 80%;
+}
+.comment-input__form {
+    padding: 0;
+}
+.comment-input__form__header {
+    display: flex;
+    input {
+        @extend .base-input;
+        flex: 1;
+    }
+}
+.comment-input__form__body {
+    display: flex;
+    textarea {
+        @extend .base-input;
+        flex: 1
+    }
+}
+.comment-input__buton {}

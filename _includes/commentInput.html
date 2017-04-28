@@ -1,9 +1,13 @@
 <div class="comment-input">
-    <form id="comment-input-form" class="comment-input__input-form"> 
+    <form id="comment-input-form" class="comment-input__form"> 
         <input type="hidden" name="slug" value="{{ page.slug }}">
-        <label><input name="name" type="text">Name</label>
-        <label><input name="email" type="email">E-mail</label>
-        <label><textarea name="message"></textarea>Message</label>
+        <div class="comment-input__form__header"> 
+            <input placeholder="Morty" name="name" type="text">
+            <input placeholder="Morty@dominio.com"name="email" type="email">
+        </div>
+        <div class="comment-input__form__body"> 
+            <textarea placeholder="tu mensaje aqui" name="message" style="resize: none;" cols="40" rows="5"></textarea>
+        </div>
     </form>
     <button id="comment-input-button" class="comment-input__button ">Enviar!</button>
 </div>
