@@ -31,3 +31,6 @@ translate:
     comments:
         en: "Comments"
         es: "Comentarios"
+    commentInput: 
+        en: "New comment" 
+        es: "Comentario nuevo"
