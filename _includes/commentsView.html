@@ -1,10 +1,6 @@
 <section class="comments">
-
-    {% capture post_slug %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}{% endcapture %}
     
-    <hr class="comments__separator">
-
-    <h2 class="comments__title">Comments</h2>
+    <h3 class="comments__title"> {{ site.translate['comments'][page.lang] }} </h3>
 
     {% if site.data[page.slug] %}
 
