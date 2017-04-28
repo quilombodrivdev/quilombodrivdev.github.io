@@ -34,3 +34,17 @@ translate:
     commentInput: 
         en: "New comment" 
         es: "Comentario nuevo"
+    commentInputNamePh: 
+        en: "Name" 
+        es: "Nombre"
+    commentInputEmailPh: 
+        en: "morty@domain.com" 
+        es: "morty@dominio.com"
+    commentInputMessagePh: 
+        en: "Comment" 
+        es: "Comentario"
+    send: 
+        en: "Send" 
+        es: "Enviar" 
+
+

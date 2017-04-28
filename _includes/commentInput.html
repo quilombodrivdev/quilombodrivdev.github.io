@@ -1,15 +1,23 @@
 <div class="comment-input">
     <form id="comment-input-form" class="comment-input__form"> 
+
         <input type="hidden" name="slug" value="{{ page.slug }}">
+
         <div class="comment-input__form__header"> 
-            <input placeholder="Morty" name="name" type="text">
-            <input placeholder="Morty@dominio.com"name="email" type="email">
+            <input placeholder={{ site.translate["commentInputNamePh"][page.lang] }} 
+                name="name" type="text">
+            <input placeholder={{ site.translate["commentInputEmailPh"][page.lang] }} 
+                name="email" type="email">
         </div>
+
         <div class="comment-input__form__body"> 
-            <textarea placeholder="tu mensaje aqui" name="message" style="resize: none;" cols="40" rows="5"></textarea>
+            <textarea placeholder={{ site.translate["commentInputMessagePh"][page.lang] }}  
+                name="message" style="resize: none;" cols="40" rows="5"></textarea>
         </div>
+
     </form>
-    <button id="comment-input-button" class="comment-input__button ">Enviar!</button>
+
+    <button id="comment-input-button" class="comment-input__button ">{{ site.translate["send"][page.lang] }}</button>
 </div>
 
 <script>
