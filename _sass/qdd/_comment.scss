@@ -11,8 +11,9 @@ $comment-content-bg: rgba(230, 215, 101, 0.22);
     padding: 10px;
     margin:auto;
     >img{
-        width:50px;
-        border-radius: 50px;
+        width:80px;
+        height:80px;
+        border-radius: 50%;
         filter:grayscale(40%);
     }
 }
