@@ -5,8 +5,8 @@ tag: javascript
 lang: es
 categories: #javascript
 author: alancampora
-comments: true
 image: http://i.imgur.com/H0bwNcK.png
+comments: true
 ---
 
 *Desde hace algunos meses, librerías como Typescript y Flow están tomando mucho protagonismo en la escena de javascript. Algunos están a favor, otros en contra, pero antes de juzgar estas libs, entendamos algunos conceptos basicos sobre el manejo de tipos en javascript*
