@@ -30,6 +30,7 @@
             return object;
         }, data);
 
+        openLoader();
         $.ajax({
             type: "POST",
             url: "http://quilombodrivdevmessages-labsjs.rhcloud.com/post/comment",
@@ -37,9 +38,11 @@
             json: true,
             data: data,
             success: function(data) {
+                closeLoader();
                 openModal("Gracias! Su mensaje sera aprobado en unos minutos");
             }, 
             error: function(data){
+                closeLoader();
                 openModal("Error al recibir el mensaje");
             }
         });
