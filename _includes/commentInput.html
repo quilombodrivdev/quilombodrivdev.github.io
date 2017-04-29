@@ -20,41 +20,4 @@
     <button id="comment-input-button" class="comment-input__button ">{{ site.translate["send"][page.lang] }}</button>
 </div>
 
-<script>
-    $('#comment-input-button').on("click",function() {
-        var formDataArray = $('#comment-input-form').serializeArray(), 
-            data={} ;
-
-        formDataArray.reduce((object,formData) => { 
-            object[formData.name] = formData.value; 
-            return object;
-        }, data);
-
-        var requiredInputs = $("#comment-input-form input").filter('[required]').toArray();
-        var isValid = requiredInputs.every( (field) => data[field["name"]].length > 0 );
-
-        if(isValid){
-            openLoader();
-
-            $.ajax({
-                type: "POST",
-                url: "http://quilombodrivdevmessages-labsjs.rhcloud.com/post/comment",
-                contentType: "application/x-www-form-urlencoded",
-                json: true,
-                data: data,
-                success: function(data) {
-                    closeLoader();
-                    openModal("Gracias! Su mensaje sera aprobado en unos minutos");
-                }, 
-                error: function(data){
-                    closeLoader();
-                    openModal("Error al recibir el mensaje");
-                }
-            });
-        }else{
-            openModal("Complete todos los campos");
-        }
-        
-    });
-</script>
 

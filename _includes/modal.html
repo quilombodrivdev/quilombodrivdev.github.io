@@ -6,28 +6,3 @@
     </div>
 </div>
 
-<script>
-    // Get the modal
-    var modal = document.getElementById('modal');
-
-    function openModal(message){
-        document.getElementById('modal-body-text').innerHTML = message;
-        showModal(true);
-    }
-
-    function closeModal(){
-        showModal(false);
-    }
-
-    function showModal(bool){
-        modal.classList.toggle('modal-visible',bool);
-        modal.classList.toggle('modal-hidden',!bool);
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event){
-        if (event.target == modal){
-            closeModal()
-        }
-    }
-</script>

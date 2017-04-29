@@ -1,9 +1,9 @@
 <section class="comments">
-    
-    <h3 class="comments__title"> {{ site.translate['comments'][page.lang] }} </h3>
 
     {% if site.data[page.slug] %}
-
+    
+        <h3 class="comments__title"> {{ site.translate['comments'][page.lang] }} </h3>
+   
         {% assign comments = site.data[page.slug] | sort %}
         
         {% for comment in comments %}
