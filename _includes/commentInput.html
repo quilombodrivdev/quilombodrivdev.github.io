@@ -5,14 +5,14 @@
 
         <div class="comment-input__form__header"> 
             <input placeholder={{ site.translate["commentInputNamePh"][page.lang] }} 
-                name="name" type="text">
+                name="name" type="text" required>
             <input placeholder={{ site.translate["commentInputEmailPh"][page.lang] }} 
-                name="email" type="email">
+                name="email" type="email" required>
         </div>
 
         <div class="comment-input__form__body"> 
             <textarea placeholder={{ site.translate["commentInputMessagePh"][page.lang] }}  
-                name="message" style="resize: none;" cols="40" rows="5"></textarea>
+                name="message" style="resize: none;" cols="40" rows="5" required></textarea>
         </div>
 
     </form>
@@ -30,22 +30,31 @@
             return object;
         }, data);
 
-        openLoader();
-        $.ajax({
-            type: "POST",
-            url: "http://quilombodrivdevmessages-labsjs.rhcloud.com/post/comment",
-            contentType: "application/x-www-form-urlencoded",
-            json: true,
-            data: data,
-            success: function(data) {
-                closeLoader();
-                openModal("Gracias! Su mensaje sera aprobado en unos minutos");
-            }, 
-            error: function(data){
-                closeLoader();
-                openModal("Error al recibir el mensaje");
-            }
-        });
+        var requiredInputs = $("#comment-input-form input").filter('[required]').toArray();
+        var isValid = requiredInputs.every( (field) => data[field["name"]].length > 0 );
+
+        if(isValid){
+            openLoader();
+
+            $.ajax({
+                type: "POST",
+                url: "http://quilombodrivdevmessages-labsjs.rhcloud.com/post/comment",
+                contentType: "application/x-www-form-urlencoded",
+                json: true,
+                data: data,
+                success: function(data) {
+                    closeLoader();
+                    openModal("Gracias! Su mensaje sera aprobado en unos minutos");
+                }, 
+                error: function(data){
+                    closeLoader();
+                    openModal("Error al recibir el mensaje");
+                }
+            });
+        }else{
+            openModal("Complete todos los campos");
+        }
+        
     });
 </script>
 
