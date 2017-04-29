@@ -5,8 +5,10 @@
 
     <body>
 
-        <div class="page-content">
+
+           {% include loader.html %}
            {% include modal.html %}
+        <div class="page-content">
            {% include header.html %}
            {{ content }}
            {% include footer.html %}

@@ -1,0 +1,23 @@
+<div id="loader" class="loader loader--hidden">
+    <div class="loader__square-a"></div>
+    <div class="loader__square-b"></div>
+</div>
+
+<script>
+    // Get the loader
+    var loader = document.getElementById('loader');
+
+    function openLoader(){
+        showLoader(true);
+    }
+
+    function closeLoader(){
+        showLoader(false);
+    }
+
+    function showLoader(bool){
+        loader.classList.toggle('loader--visible',bool);
+        loader.classList.toggle('loader--hidden',!bool);
+    }
+
+</script>
