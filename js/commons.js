@@ -26,7 +26,7 @@
 
                 $.ajax({
                     type: "POST",
-                    url: "http://quilombodrivdevmessages-labsjs.rhcloud.com/post/comment",
+                    url: "https://quilombodrivdevmessages-labsjs.rhcloud.com/post/comment",
                     contentType: "application/x-www-form-urlencoded",
                     json: true,
                     data: data,
