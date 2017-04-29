@@ -12,7 +12,8 @@
 
         $('#comment-input-button').on("click", function() {
             var formDataArray = $('#comment-input-form').serializeArray(),
-                data = {},isValid;
+                data = {},
+                isValid;
 
             formDataArray.reduce((object, formData) => {
                 object[formData.name] = formData.value;
@@ -67,47 +68,63 @@
     };
 
     // --------- MODAL
-    function initModal(){
+    function initModal() {
         modal = document.getElementById('modal');
+        initCloseButton();
     }
 
-    function openModal(message){
-        document.getElementById('modal-body-text').innerHTML = message;
+    function initCloseButton() {
+        var closeButton;
+
+        closeButton = document.getElementById('modal-content-header-close');
+        closeButton.addEventListener('click',function() {
+            closeModal();
+        });
+    }
+
+    function openModal(message) {
+        document.getElementById('modal-content-body-text').innerHTML = message;
         showModal(true);
     };
 
-    function closeModal(){
+    function closeModal() {
         showModal(false);
     };
 
-    function showModal(bool){
-        modal.classList.toggle('modal-visible',bool);
-        modal.classList.toggle('modal-hidden',!bool);
+    function showModal(bool) {
+        modal.classList.toggle('modal-visible', bool);
+        modal.classList.toggle('modal-hidden', !bool);
     };
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event){
-        if (event.target == modal){
+    //window.onclick = function(event) {
+        //if (event.target == modal) {
+            //closeModal()
+        //}
+    //};
+
+    window.addEventListener('touchstart', function(event) {
+        if (event.target == modal) {
             closeModal()
         }
-    };
+    });
 
     // ----- LOADER
-    function initLoader(){
+    function initLoader() {
         loader = document.getElementById('loader');
     }
 
-    function openLoader(){
+    function openLoader() {
         showLoader(true);
     };
 
-    function closeLoader(){
+    function closeLoader() {
         showLoader(false);
     };
 
-    function showLoader(bool){
-        loader.classList.toggle('loader--visible',bool);
-        loader.classList.toggle('loader--hidden',!bool);
+    function showLoader(bool) {
+        loader.classList.toggle('loader--visible', bool);
+        loader.classList.toggle('loader--hidden', !bool);
     };
 
 })();

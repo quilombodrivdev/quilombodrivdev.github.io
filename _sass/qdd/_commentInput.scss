@@ -4,7 +4,7 @@ $base-input-bg: $amber200;
     margin: 5px;
     outline: none;
     background-color: $base-input-bg;
-    font-family:inherit;
+    font-family: inherit;
     font-size: 1rem;
 }
 
@@ -12,16 +12,20 @@ $base-input-bg: $amber200;
     margin: auto;
     width: 80%;
 }
+
 .comment-input__form {
     padding: 0;
 }
+
 .comment-input__form__header {
     display: flex;
+    flex-wrap: wrap;
     input {
         @extend .base-input;
         flex: 1;
     }
 }
+
 .comment-input__form__body {
     display: flex;
     textarea {
@@ -29,4 +33,5 @@ $base-input-bg: $amber200;
         flex: 1
     }
 }
+
 .comment-input__buton {}

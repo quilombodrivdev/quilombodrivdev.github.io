@@ -1,40 +1,79 @@
 $modal-content-bg: $amber300;
-$modal-bg: rgba($background-color, 0.4); 
-.modal{
-    position: fixed;     
+$modal-bg: rgba($background-color, 0.4);
+$modal-content-header-close-bg: rgba($background-color, 0.6);
+.modal {
+    position: fixed;
     left: 0;
     top: 0;
-    right:0;
-    bottom:0;
-    z-index: 1; 
-    background-color: $modal-bg; /* Black w/ opacity */
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: $modal-bg;
+    /* Black w/ opacity */
 }
-.modal-hidden{
-    display:none;
+
+.modal-hidden {
+    display: none;
 }
-.modal-visible{
-    display:block;
+
+.modal-visible {
+    display: block;
 }
-.modal__content{
+
+.modal__content {
     position: relative;
     width: 300px;
     background: $modal-content-bg;
     padding: 10px;
     margin: 200px auto;
-    text-align:center;
+    text-align: center;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
 }
 
+.modal__content__body {
+    padding: 10px;
+}
+
+.modal__content__header {
+    position: relative;
+}
+
+.modal__content__header__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: $modal-content-header-close-bg;
+    color: white;
+    cursor:pointer;
+}
+
+
 /* Add Animation */
+
 @-webkit-keyframes animatetop {
-    from {top: -100px; opacity: 0} 
-    to {top: 0; opacity: 1}
+    from {
+        top: -100px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 @keyframes animatetop {
-    from {top: -100px; opacity: 0}
-    to {top: 0; opacity: 1}
+    from {
+        top: -100px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
