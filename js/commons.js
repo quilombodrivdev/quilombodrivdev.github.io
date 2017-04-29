@@ -15,7 +15,7 @@
                 data = {},
                 isValid;
 
-            formDataArray.reduce((object, formData) => {
+            formDataArray.reduce(function(object, formData){
                 object[formData.name] = formData.value;
                 return object;
             }, data);
