@@ -1,14 +1,26 @@
-$purple300:rgba(36, 24, 47, 0.99);
-
-$amber200:rgba(230, 215, 101, 0.22);
-$amber300:#f7e13e;
+$purple1000:rgba(36, 24, 47, 1);
+$purple900:rgba($purple1000, 0.9);
+$purple800:rgba($purple1000, 0.8);
+$purple700:rgba($purple1000, 0.8);
+$purple600:rgba($purple1000, 0.6);
+$purple500:rgba($purple1000, 0.5);
+$purple400:rgba($purple1000, 0.4);
+$purple300:rgba($purple1000, 0.3);
+$purple200:rgba($purple1000, 0.2);
+$purple100:rgba($purple1000, 0.1);
+$amber1000:rgba(247, 225, 62, 1);
+$amber900:rgba($amber1000, 0.9);
+$amber800:rgba($amber1000, 0.8);
+$amber700:rgba($amber1000, 0.7);
+$amber600:rgba($amber1000, 0.6);
+$amber500:rgba($amber1000, 0.5);
+$amber400:rgba($amber1000, 0.4);
+$amber300:rgba($amber1000, 0.3);
+$amber200:rgba($amber1000, 0.2);
+$amber100:rgba($amber1000, 0.1);
 $grey100:#e8e8e8;
-
 $bg-grey:#f9f9f9;
-$background-color:$purple300; 
+$background-color:$purple1000;
 $color-bold:$amber200;
 $javascript-color: $amber300;
 $faded-color:rgba($javascript-color, 0.7)
-
-
-
