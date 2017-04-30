@@ -1,57 +1,52 @@
-body{
-  background: $background-color;
-  font-family: 'Lato',Helvetica, Arial, sans-serif;
-  margin:0;
+body {
+    background: $background-color;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    margin: 0;
 }
 
-a{
- text-decoration:none;
- padding:5px;
- color:black;
+a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
 }
 
 $button-bg: $background-color;
-button{
+button {
     font-size: 1rem;
     padding: 10px;
-    background-color:$button-bg; 
+    background-color: $button-bg;
     border: 0px;
     color: white;
-    margin:5px;
-    cursor:pointer;
+    margin: 5px;
+    cursor: pointer;
 }
 
-.container{
-    max-width:calc(1200px - (30px * 2));
+.container {
+    max-width: calc(1200px - (30px * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: 10px;
     padding-left: 10px;
 }
 
-
-.page-content{
-    background-color:$bg-grey;
+.page-content {
+    background-color: $bg-grey;
 }
 
-.tag{
+.tag {
     border: 3px solid black;
     padding: 5px;
-
-    &:hover{
-        border-color:white; 
+    &:hover {
+        border-color: white;
     }
 }
 
-.title-font{
+.title-font {
     font-family: 'Bangers', cursive;
 }
 
-@media screen and (max-width: $mobile-width){
-
-    .page-content{
-        margin: 0px; 
+@media screen and (max-width: $mobile-width) {
+    .page-content {
+        margin: 0px;
     }
-
 }
-
