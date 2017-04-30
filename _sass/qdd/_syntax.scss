@@ -3,13 +3,21 @@
  */
 
 $highlight-bg: $amber100;
-
 @import "codeThemes/_base16.scss";
+.code {
+    font-family: 'Droid Sans Mono', monospace !important;
+    font-size: 0.9em;
+    color: #a71d5d;
+}
 
 .highlight {
     background-color: $highlight-bg;
     padding: 10px;
     code {
-        font-family: 'Source Code Pro', monospace;
+        @extend .code;
     }
+}
+
+code {
+    @extend .code;
 }
