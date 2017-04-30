@@ -82,7 +82,7 @@ $post-header-title-bg: $amber700;
 
 @media screen and (max-width: $mobile-width){
     .postcard{
-        margin: auto;
+        margin: 10px auto;
     }
     .posts__group__cards{
         flex-direction:column;
