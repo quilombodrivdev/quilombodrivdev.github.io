@@ -9,10 +9,10 @@ image: http://static6.uk.businessinsider.com/image/55b50862dd08950f4e8b4574-1190
 comments: true
 ---
 
-*Que es la coercion?! Nos ayuda o nos perjudica ?* 
+*Que es la coercion?! Desmitifiquemos este controversial tema, entendiendo como funciona.* 
 
 ## Conversion de valores
-Como vimos en el articulo anterior, coercion implica una transformacion del tipo del valor que contiene una variable. Existen dos tipos de conversiones: las explicitas, que se llevan a cabo cuando en nuestro codigo manifestamos la intencion de convertir el valor a otro tipo, y la implicitas, que son llevadas a cabo por el compilador, nosotros no tenemos inferencia en la misma. Para ser bien claros y a estas conversiones las denominaremos **coercion explicita** y **coercion implicita**. 
+Como vimos en el post anterior [El extrano mundo de los tipos]({% post_url 2017-03-25-ElExtranoMundoDeLosTiposEnJS %}), coercion implica una transformacion del tipo del valor que contiene una variable. Existen dos tipos de conversiones: las explicitas, que se llevan a cabo cuando en nuestro codigo manifestamos la intencion de convertir el valor a otro tipo, y la implicitas, que son llevadas a cabo por el compilador, nosotros no tenemos inferencia en la misma. Para ser bien claros y a estas conversiones las denominaremos **coercion explicita** y **coercion implicita**. 
 
 Manos a la obra, veamos el siguiente ejemplo.  
 
@@ -33,10 +33,27 @@ Como vemos, para saber bien que es lo que sucede con nuestro codigo, no tenemos 
 ## Conversiones internas sobre valores
 
 ### ToString
-Cuando un valor no string es convertido a string, internamente se llamara a la function ToString.
+Cuando un valor no string es utilizado como si lo fuera, internamente el interprete de js llamara a la funcion `ToString`. Los valores que contengan tipos primitivos, seran convertidos a string sin muchas variaciones: 
 
-Las values que contenga tipos primitivos, seran convertidos a string sin muchas variaciones: null sera "null", undefined sera "undefined" y true/false seran "true" "false" respectivamente.
+* `null` sera "null"
+* `undefined` sera "undefined" 
+* `true`/`false` seran "true" "false" respectivamente.
 
+```javascript
+
+    var variableSinValor; 
+    variableSinValor + "-soyUnString"
+    "undefined-soyUnString"
+
+    var variableNull = null;
+    variableNull + "-soyUnString"
+    "null-soyUnString"
+    
+    var variableBoolean = true;
+    variableBoolean + "-soyUnString"
+    "true-soyUnString"
+
+```
 En el caso de los numeros es un poco mas complicado: 
 
 * NaN, retorna el String "NaN".
