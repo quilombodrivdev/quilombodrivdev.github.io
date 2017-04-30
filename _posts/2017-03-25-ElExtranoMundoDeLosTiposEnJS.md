@@ -23,6 +23,7 @@ En cambio, en los lenguajes debilmente tipados como javascript, las variables no
 
 Ejemplo en js: 
 ```javascript
+    var superIntVariable;
     superIntVariable = 15; 
     superIntVariable = "12" // not an error! 
 ```
