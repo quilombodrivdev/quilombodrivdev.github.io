@@ -5,28 +5,28 @@ tag: javascript
 lang: es
 categories: #javascript
 author: alancampora
-image: http://cdn2us.denofgeek.com/sites/denofgeekus/files/2017/04/rick-and-morty-season-3-episode-1-review-the-rickshank-redemption.jpg
+image: http://static6.uk.businessinsider.com/image/55b50862dd08950f4e8b4574-1190-625/why-you-should-watch-rick-and-morty-adult-swims-brilliant-twist-on-all-things-sci-fi.jpg
 comments: true
 ---
 
-*Coercion, buena ? mala ? Veamos como sacarle provecho a este controvercial tema*
+*Que es la coercion?! Nos ayuda o nos perjudica ?* 
 
 ## Conversion de valores
-Como vimos en el articulo anterior, existen dos tipos de conversiones. Las las explicitas (coercion explicita / type casting), y las implicitas, que se realizan de manera automagica. Para no confundirnos, a estas ultimas las vamos a denominar como coercion.  
+Como vimos en el articulo anterior, coercion implica una transformacion del tipo del valor que contiene una variable. Existen dos tipos de conversiones: las explicitas, que se llevan a cabo cuando en nuestro codigo manifestamos la intencion de convertir el valor a otro tipo, y la implicitas, que son llevadas a cabo por el compilador, nosotros no tenemos inferencia en la misma. Para ser bien claros y a estas conversiones las denominaremos **coercion explicita** y **coercion implicita**. 
 
-Manos a la obra, veamos la siguiente porcion de codigo: 
+Manos a la obra, veamos el siguiente ejemplo.  
 
 ```javascript
 
 var soyUnNumero = 10;
 
-var coercion = soyUnNumero + ""; // resultado "10" 
+var coercionImplicita = soyUnNumero + ""; // resultado "10" 
 
-var typeCasting = String( a ); // resultado "10" 
+var coercionExplicita = String( a ); // resultado "10" 
 
 ```
 
-En el codigo anterior, vemos dos sentencias que tienen el mismo resultado pero que funcionan de manera distinta. Cuando el operador '+'  recibe un operando de tipo "string", siempre retorna un string como resultado. Aqui es donde ocurre la magia de la coercion, ya que el numero es convertido a string para que todo el resultado tambien tenga este tipo. Javascript se encarga de hacer esta conversion por nosotros. 
+En el codigo anterior, vemos dos sentencias que tienen el mismo resultado pero que funcionan de manera distinta. Cuando el operador '+'  recibe un operando de tipo "string", siempre retorna un string como resultado. Aqui es donde ocurre la magia de la coercion implicita, ya que el numero es convertido a string para que todo el resultado tambien tenga este tipo. Javascript se encarga de hacer esta conversion por nosotros. 
 
 Como vemos, para saber bien que es lo que sucede con nuestro codigo, no tenemos otra alternativa mas que aprender cuales son las reglas de la coercion para los distintos tipos y operadores.  
 
