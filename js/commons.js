@@ -1,12 +1,14 @@
 (function() {
     "use strict";
-    var modal, loader, navMobile;
+    var modal, loader, navMobile,navMobileHeaderText;
 
     document.addEventListener("DOMContentLoaded", function() {
         commentInputButtonEvent();
         initModal();
         initLoader();
         initNavMobile();
+        initNavMobileHeaderText();
+        initBody();
     });
 
     function commentInputButtonEvent() {
@@ -109,6 +111,7 @@
         }
     });
 
+
     // ----- LOADER
     function initLoader() {
         loader = document.getElementById('loader');
@@ -127,7 +130,28 @@
         loader.classList.toggle('loader--hidden', !bool);
     };
 
-    // navigation
+    // NAVIGATION
+    function initNavMobileHeaderText(){
+        navMobileHeaderText = document.getElementById("header-nav-mobile-top-text");
+    }
+    function initBody(){
+        var newText, subheaders, possibleSubheaders;
+        document.getElementById('body').onscroll = function(){
+            subheaders = Array.prototype.slice.call(document.querySelectorAll("h2"));
+
+            possibleSubheaders = subheaders.filter(function(subheader){
+                return subheader.getBoundingClientRect().top<0;
+            })
+
+            if(possibleSubheaders.length>0) {
+                newText = possibleSubheaders[possibleSubheaders.length-1].innerHTML;
+                navMobileHeaderText.innerHTML = newText;
+            }else{
+                navMobileHeaderText.innerHTML = "Quilombo Driven Development";
+            }
+        }
+    };
+    
     function initNavMobile() {
         navMobile = document.getElementById('header-nav-mobile-menu');
         initHamburgerButton();

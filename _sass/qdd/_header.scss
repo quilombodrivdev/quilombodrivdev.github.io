@@ -28,14 +28,21 @@ $header-nav-mobile-top-text-color:white;
 
 .header__nav__mobile {}
 
-.header__nav__mobile__top {
+.header__nav__mobile__top {;
     display: none;
     text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    z-index: 1;
+    //box-shadow: 10px 10px 20px rgba(136, 136, 136, 0.14);
 }
 
 .header__nav__mobile__top__text {
     flex: 3;
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
     background-color: $header-nav-mobile-top-text-bg;
     color: $header-nav-mobile-top-text-color;
@@ -43,7 +50,7 @@ $header-nav-mobile-top-text-color:white;
 
 .header__nav__mobile__top__hamburguer {
     height: 30px;
-    margin: 10px;
+    margin: 5px 10px;
     padding: 5px;
 }
 
