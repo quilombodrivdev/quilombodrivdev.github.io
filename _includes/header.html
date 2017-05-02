@@ -2,7 +2,7 @@
     <div class="header__nav">
         <div class="header__nav__desktop">
             <span class="header__nav__desktop__title">Quilombo Driven Development</span>
-            {% assign htmlClass ="header__nav__desktop__item" %}
+            {% assign htmlClass ="header__nav__desktop" %}
             {% include headerItems.html class=htmlClass %}
         </div>
         <div id="header-nav-mobile" class="header__nav__mobile">
@@ -11,7 +11,7 @@
                     <img id="header-nav-mobile-top-hamburger" src="/assets/hamburger.png" class="header__nav__mobile__top__hamburguer"></img>
             </div>
             <div id="header-nav-mobile-menu" class="header__nav__mobile__menu">
-                {% assign htmlClass ="header__nav__mobile__item" %}
+                {% assign htmlClass ="header__nav__mobile__menu" %}
                 {% include headerItems.html class=htmlClass %}
             </div>
         </div>

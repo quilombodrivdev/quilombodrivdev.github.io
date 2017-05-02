@@ -71,15 +71,17 @@
     // --------- MODAL
     function initModal() {
         modal = document.getElementById('modal');
-        initCloseButton();
+        initCloseButton('modal-content-header-close', function() {
+            closeModal();
+        });
     }
 
-    function initCloseButton() {
+    function initCloseButton(id, closeCallback) {
         var closeButton;
 
-        closeButton = document.getElementById('modal-content-header-close');
+        closeButton = document.getElementById(id);
         closeButton.addEventListener('click', function() {
-            closeModal();
+            closeCallback.call();
         });
     }
 
@@ -102,7 +104,7 @@
         if (event.target == modal) {
             closeModal();
         }
-        if(event.target==navMobile){
+        if (event.target == navMobile) {
             toggleMenu()
         }
     });
@@ -129,9 +131,16 @@
     function initNavMobile() {
         navMobile = document.getElementById('header-nav-mobile-menu');
         initHamburgerButton();
+        initCloseNavMobile();
     }
 
-    function initHamburgerButton(){
+    function initCloseNavMobile() {
+        initCloseButton('header-nav-mobile-menu-item-close', function() {
+            toggleMenu();
+        });
+    }
+
+    function initHamburgerButton() {
         var button;
 
         button = document.getElementById('header-nav-mobile-top-hamburger');

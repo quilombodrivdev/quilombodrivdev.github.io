@@ -1,9 +1,8 @@
 $header-nav-mobile-item-bg:black;
 $header-nav-mobile-item-color:white;
-$header-nav-mobile-menu-open-gb: $purple800;
+$header-nav-mobile-menu-open-gb: $purple500;
 $header-nav-mobile-top-text-bg:black;
 $header-nav-mobile-top-text-color:white;
-
 .header {
     padding: 10px;
     border-bottom: 1px solid $grey100;
@@ -31,27 +30,25 @@ $header-nav-mobile-top-text-color:white;
 
 .header__nav__mobile__top {
     display: none;
-    text-align:center;
+    text-align: center;
 }
 
 .header__nav__mobile__top__text {
     flex: 3;
-    padding:10px;
-    margin:10px;
-    background-color:$header-nav-mobile-top-text-bg;
-    color:$header-nav-mobile-top-text-color;
-
+    padding: 10px;
+    margin: 10px;
+    background-color: $header-nav-mobile-top-text-bg;
+    color: $header-nav-mobile-top-text-color;
 }
 
 .header__nav__mobile__top__hamburguer {
     height: 30px;
-    margin:10px;
-    padding:5px;
+    margin: 10px;
+    padding: 5px;
 }
 
 .header__nav__mobile__menu {
-    //display:none;
-    opacity:0;
+    opacity: 0;
     height: 0px;
     width: 0px;
 }
@@ -66,13 +63,13 @@ $header-nav-mobile-top-text-color:white;
     position: fixed;
     background-color: $header-nav-mobile-menu-open-gb;
     z-index: 1;
+    opacity: 1;
     display: flex;
-    opacity:1;
     flex-direction: column;
-    -webkit-transition: opacity  0.2s;
+    -webkit-transition: opacity 0.3s;
 }
 
-.header__nav__mobile__item {
+.header__nav__mobile__menu__item {
     color: $header-nav-mobile-item-color;
     height: 50px;
     line-height: 50px;
@@ -81,7 +78,23 @@ $header-nav-mobile-top-text-color:white;
     text-decoration: none;
     margin: 10px;
     background: $header-nav-mobile-item-bg;
-    cursor:pointer;
+    cursor: pointer;
+}
+
+.header__nav__mobile__menu__item__close {
+    height: 50px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    color: $header-nav-mobile-item-color;
+    background: $header-nav-mobile-item-bg;
+    border-radius: 20px;
 }
 
 .header__lang {

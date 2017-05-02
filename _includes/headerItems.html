@@ -1,6 +1,10 @@
-<a class={{htmlClass}} href={{ page.base-url }}>{{ site.translate["home"][page.lang] }}</a>
-<a class={{htmlClass}} href={{ page.base-url | append: page.pages-url | append:
-    "/about.html" }}>{{ site.translate["about"][page.lang] }}</a>
-<a class={{htmlClass}} href={{ page.base-url | append: page.pages-url | append:
-    '/glosarry.html' }}>{{ site.translate['glosarry'][page.lang] }}</a>
+
+{% if htmlClass == "header__nav__mobile__menu"" %}
+<a  class={{htmlClass | append: "__item" | append: "__close" }} id="header-nav-mobile-menu-item-close">&times;</a>
+{% endif %}
+    <a class={{htmlClass |  append: "__item"}} href={{ page.base-url }}>{{ site.translate["home"][page.lang] }}</a>
+    <a class={{htmlClass |  append: "__item"}} href={{ page.base-url | append: page.pages-url | append:
+        "/about.html" }}>{{ site.translate["about"][page.lang] }}</a>
+    <a class={{htmlClass |  append: "__item"}}  href={{ page.base-url | append: page.pages-url | append:
+        '/glosarry.html' }}>{{ site.translate['glosarry'][page.lang] }}</a>
 
