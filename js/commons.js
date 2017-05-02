@@ -1,11 +1,12 @@
 (function() {
     "use strict";
-    var modal, loader;
+    var modal, loader, navMobile;
 
     document.addEventListener("DOMContentLoaded", function() {
         commentInputButtonEvent();
         initModal();
         initLoader();
+        initNavMobile();
     });
 
     function commentInputButtonEvent() {
@@ -15,7 +16,7 @@
                 data = {},
                 isValid;
 
-            formDataArray.reduce(function(object, formData){
+            formDataArray.reduce(function(object, formData) {
                 object[formData.name] = formData.value;
                 return object;
             }, data);
@@ -77,7 +78,7 @@
         var closeButton;
 
         closeButton = document.getElementById('modal-content-header-close');
-        closeButton.addEventListener('click',function() {
+        closeButton.addEventListener('click', function() {
             closeModal();
         });
     }
@@ -96,16 +97,13 @@
         modal.classList.toggle('modal-hidden', !bool);
     };
 
-    // When the user clicks anywhere outside of the modal, close it
-    //window.onclick = function(event) {
-        //if (event.target == modal) {
-            //closeModal()
-        //}
-    //};
 
     window.addEventListener('touchstart', function(event) {
         if (event.target == modal) {
-            closeModal()
+            closeModal();
+        }
+        if(event.target==navMobile){
+            toggleMenu()
         }
     });
 
@@ -126,5 +124,24 @@
         loader.classList.toggle('loader--visible', bool);
         loader.classList.toggle('loader--hidden', !bool);
     };
+
+    // navigation
+    function initNavMobile() {
+        navMobile = document.getElementById('header-nav-mobile-menu');
+        initHamburgerButton();
+    }
+
+    function initHamburgerButton(){
+        var button;
+
+        button = document.getElementById('header-nav-mobile-top-hamburger');
+        button.addEventListener('click', function() {
+            toggleMenu();
+        });
+    }
+
+    function toggleMenu() {
+        navMobile.classList.toggle('header__nav__mobile__menu--open');
+    }
 
 })();

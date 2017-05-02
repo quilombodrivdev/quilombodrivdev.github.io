@@ -1,19 +1,20 @@
-<div class='header'>
-   <div class='header__nav'>
-        <span class='header__nav__title'>Quilombo Driven Development</span>
-        <a class='header__nav__item' href={{ page.base-url }}>{{ site.translate['home'][page.lang] }}</a>
-        <a class='header__nav__item' href={{ page.base-url | append: page.pages-url | append:
-            '/about.html' }}>{{ site.translate['about'][page.lang] }}</a>
-        <a class='header__nav__item' href={{ page.base-url | append: page.pages-url | append:
-            '/glosarry.html' }}>{{ site.translate['glosarry'][page.lang] }}</a>
+<div class="header">
+    <div class="header__nav">
+        <div class="header__nav__desktop">
+            <span class="header__nav__desktop__title">Quilombo Driven Development</span>
+            {% assign htmlClass ="header__nav__desktop__item" %}
+            {% include headerItems.html class=htmlClass %}
+        </div>
+        <div id="header-nav-mobile" class="header__nav__mobile">
+            <div id="header-nav-mobile-top" class="header__nav__mobile__top">
+                    <div class="header__nav__mobile__top__text">Quilombo Driven Development</div>
+                    <img id="header-nav-mobile-top-hamburger" src="/assets/hamburger.png" class="header__nav__mobile__top__hamburguer"></img>
+            </div>
+            <div id="header-nav-mobile-menu" class="header__nav__mobile__menu">
+                {% assign htmlClass ="header__nav__mobile__item" %}
+                {% include headerItems.html class=htmlClass %}
+            </div>
+        </div>
     </div>
-    <!--<div class='header__lang'>-->
-        <!--<a class='header__lang_item' href="/">es</a>-->
-        <!--<a class='header__lang_item' href="/en">en</a>-->
-    <!--</div>-->
-    <!--<div class='header__top'>-->
-        <!--<div class='header__top__title'>-->
-            <!--<p> Quilombo Driven Development </p>-->
-        <!--</div>-->
-    <!--</div>-->
 </div>
+
