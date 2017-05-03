@@ -56,6 +56,10 @@ $post-header-title-bg: $amber700;
     padding: 20px;
     box-shadow: 10px 10px 20px rgba(136, 136, 136, 0.14);
 }
+.postcard__link{
+    text-decoration: none;
+}
+
 .postcard__header{
     text-align: center;
     position:relative;
