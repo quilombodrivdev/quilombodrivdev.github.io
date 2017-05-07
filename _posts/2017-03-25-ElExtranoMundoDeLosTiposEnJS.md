@@ -5,7 +5,7 @@ tag: javascript
 lang: es
 categories: #javascript
 author: alancampora
-image: http://i.imgur.com/H0bwNcK.png
+image: /assets/posts/elextranomundodelostipos.png 
 comments: true
 ---
 
