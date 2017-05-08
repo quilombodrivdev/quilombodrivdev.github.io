@@ -5,7 +5,7 @@ tag: javascript
 lang: es
 categories: #javascript
 author: alancampora
-image: http://static6.uk.businessinsider.com/image/55b50862dd08950f4e8b4574-1190-625/why-you-should-watch-rick-and-morty-adult-swims-brilliant-twist-on-all-things-sci-fi.jpg
+image: /assets/posts/latemidacoercion.jpg
 comments: true
 ---
 
