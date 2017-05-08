@@ -2,6 +2,7 @@ exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor]
 sass:
   style: compressed
 highlighter: rouge
+google_analytics: "UA-98650718-1" 
 defaults:
     -
      scope:
